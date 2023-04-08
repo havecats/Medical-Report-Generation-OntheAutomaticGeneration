@@ -27,8 +27,9 @@ if __name__ == '__main__':
     # parser.add_argument('--result_path', type=str,
     #                     default='./results/clean_test.json')
     parser.add_argument('--result_path', type=str,
-                        default='./debug_models/v4_v3_no_bn/20230406-2027/results/debug.json')
+                        default='./report_v4_models/v4/20230406-0655/results/debug.json')
     args = parser.parse_args()
+    print(args)
 
     test = load_json(args.result_path)
     datasetGTS = {'annotations': []}

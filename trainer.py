@@ -629,7 +629,7 @@ if __name__ == '__main__':
     """
     Training Argument
     """
-    parser.add_argument('--batch_size', type=int, default=6)
+    parser.add_argument('--batch_size', type=int, default=6) #修改了batch_size, 原本为16
     parser.add_argument('--learning_rate', type=int, default=0.001)
     parser.add_argument('--epochs', type=int, default=50)
 

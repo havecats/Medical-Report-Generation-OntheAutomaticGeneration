@@ -64,6 +64,11 @@ class DebuggerBase:
                 self.scheduler.step(train_loss)
             else:
                 self.scheduler.step(val_loss)
+            print("[{} - Epoch {}] train loss:{} - val_loss:{} - lr:{}\n".format(self._get_now(),
+                                                                                 epoch_id,
+                                                                                 train_loss,
+                                                                                 val_loss,
+                                                                                 self.optimizer.param_groups[0]['lr']))
             self.writer.write(
                 "[{} - Epoch {}] train loss:{} - val_loss:{} - lr:{}\n".format(self._get_now(),
                                                                                epoch_id,
@@ -86,6 +91,7 @@ class DebuggerBase:
                       val_loss=val_loss,
                       lr=self.optimizer.param_groups[0]['lr'],
                       epoch=epoch_id)
+        self.writer.close()  # 新加的
 
     def _epoch_train(self):
         raise NotImplementedError

@@ -4,7 +4,9 @@ import torchvision
 import numpy as np
 from torch.autograd import Variable
 import torchvision.models as models
+# import clip
 
+# device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 class VisualFeatureExtractor(nn.Module):
     def __init__(self, model_name='densenet201', pretrained=False):
@@ -30,6 +32,9 @@ class VisualFeatureExtractor(nn.Module):
             model = nn.Sequential(*modules)
             func = torch.nn.AvgPool2d(kernel_size=7, stride=1, padding=0)
             out_features = densenet.classifier.in_features
+        # elif self.model_name == 'clip':
+        #     self.clip_model, self.preprocess = clip.load("ViT-B/32", device='cuda', jit=False)
+
         linear = nn.Linear(in_features=out_features, out_features=out_features)
         bn = nn.BatchNorm1d(num_features=out_features, momentum=0.1)
         return model, out_features, func, bn, linear
@@ -66,6 +71,8 @@ class MLC(nn.Module):
     def forward(self, avg_features):
         tags = self.softmax(self.classifier(avg_features))
         semantic_features = self.embed(torch.topk(tags, self.k)[1])
+        # semantic_features = self.embed(torch.topk(tags, self.k)[0],[0])
+
         return tags, semantic_features
 
 

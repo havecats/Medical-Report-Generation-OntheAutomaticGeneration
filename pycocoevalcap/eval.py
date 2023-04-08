@@ -40,9 +40,8 @@ class COCOEvalCap:
         # Compute scores
         # =================================================
         eval = {}
-        i = 0
+
         for scorer, method in scorers:
-            i += 1
             score, scores = scorer.compute_score(gts, res)
             print(method, ":", score, scores)
             if type(method) == list:
@@ -51,10 +50,9 @@ class COCOEvalCap:
                     self.setImgToEvalImgs(scs, imgIds, m)
 
             else:
-                print("else:")
+                # print("else:")
                 self.setEval(score, method)
                 self.setImgToEvalImgs(scores, imgIds, method)
-        print(i)
         self.setEvalImgs()
 
     def setEval(self, score, method):
