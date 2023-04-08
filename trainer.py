@@ -91,6 +91,7 @@ class DebuggerBase:
                       val_loss=val_loss,
                       lr=self.optimizer.param_groups[0]['lr'],
                       epoch=epoch_id)
+            torch.cuda.empty_cache()
         self.writer.close() # 新加的
 
     def _epoch_train(self):
@@ -629,7 +630,7 @@ if __name__ == '__main__':
     """
     Training Argument
     """
-    parser.add_argument('--batch_size', type=int, default=6) #修改了batch_size, 原本为16
+    parser.add_argument('--batch_size', type=int, default=16) #修改了batch_size, 原本为16
     parser.add_argument('--learning_rate', type=int, default=0.001)
     parser.add_argument('--epochs', type=int, default=50)
 
