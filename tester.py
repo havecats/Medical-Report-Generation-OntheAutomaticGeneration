@@ -393,14 +393,26 @@ if __name__ == '__main__':
     Data Argument
     """
     # Path Argument
-    parser.add_argument('--model_dir', type=str, default='./debug_models/v4_v3_no_bn/20230406-2027')
     parser.add_argument('--image_dir', type=str, default='./data/images',
                         help='the path for images')
-    parser.add_argument('--caption_json', type=str, default='./data/new_data/debugging_captions.json',
+    # debug中的densenet模型
+    # parser.add_argument('--model_dir', type=str, default='./debug_models/v4_v3_no_bn/20230406-2027')
+    # parser.add_argument('--caption_json', type=str, default='./data/new_data/debugging_captions.json',
+    #                     help='path for captions')
+    # parser.add_argument('--vocab_path', type=str, default='./data/new_data/debugging_vocab.pkl',
+    #                     help='the path for vocabulary object')
+    # parser.add_argument('--file_lits', type=str, default='./data/new_data/debugging_data.txt',
+    #                     help='the path for test file list')
+    # parser.add_argument('--load_model_path', type=str, default='train_best_loss.pth.tar',
+    #                     help='The path of loaded model')
+
+    #train中的resnet模型
+    parser.add_argument('--model_dir', type=str, default='./report_v4_models/v4/20230406-0655')
+    parser.add_argument('--caption_json', type=str, default='./data/new_data/captions.json',
                         help='path for captions')
-    parser.add_argument('--vocab_path', type=str, default='./data/new_data/debugging_vocab.pkl',
+    parser.add_argument('--vocab_path', type=str, default='./data/new_data/vocab.pkl',
                         help='the path for vocabulary object')
-    parser.add_argument('--file_lits', type=str, default='./data/new_data/debugging_data.txt',
+    parser.add_argument('--file_lits', type=str, default='./data/new_data/test_data.txt',
                         help='the path for test file list')
     parser.add_argument('--load_model_path', type=str, default='train_best_loss.pth.tar',
                         help='The path of loaded model')
@@ -424,7 +436,9 @@ if __name__ == '__main__':
     """
     parser.add_argument('--momentum', type=int, default=0.1)
     # VisualFeatureExtractor
-    parser.add_argument('--visual_model_name', type=str, default='densenet201',
+    # parser.add_argument('--visual_model_name', type=str, default='densenet201',
+    #                     help='CNN model name')
+    parser.add_argument('--visual_model_name', type=str, default='resnet152',
                         help='CNN model name')
     parser.add_argument('--pretrained', action='store_true', default=False,
                         help='not using pretrained model when training')
@@ -453,7 +467,7 @@ if __name__ == '__main__':
     parser.add_argument('--s_max', type=int, default=6)
     parser.add_argument('--n_max', type=int, default=30)
 
-    parser.add_argument('--batch_size', type=int, default=8)
+    parser.add_argument('--batch_size', type=int, default=6)#原为8，改为6
 
     # Loss function
     parser.add_argument('--lambda_tag', type=float, default=10000)
