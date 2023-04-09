@@ -123,8 +123,8 @@ class DebuggerBase:
 
         if not os.path.exists(model_dir):
             os.makedirs(model_dir)
-
-        model_dir = os.path.join(model_dir, self._get_now())
+        dir_name = self._get_now()+self.args.visual_model_name
+        model_dir = os.path.join(model_dir, dir_name)
 
         if not os.path.exists(model_dir):
             os.makedirs(model_dir)
@@ -589,7 +589,8 @@ if __name__ == '__main__':
     """
     parser.add_argument('--momentum', type=int, default=0.1)
     # VisualFeatureExtractor
-    parser.add_argument('--visual_model_name', type=str, default='resnet152',
+    #resnet, clip, densenet模型种类
+    parser.add_argument('--visual_model_name', type=str, default='clip',
                         help='CNN model name')
     parser.add_argument('--pretrained', action='store_true', default=True,
                         help='not using pretrained model when training')

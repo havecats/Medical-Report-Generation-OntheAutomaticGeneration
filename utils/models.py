@@ -3,10 +3,10 @@ import torch.nn as nn
 import torchvision
 import numpy as np
 from torch.autograd import Variable
-import torchvision.models as models
+# import torchvision.models as models
 # import clip
 
-# device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 class VisualFeatureExtractor(nn.Module):
     def __init__(self, model_name='densenet201', pretrained=False):
@@ -21,19 +21,24 @@ class VisualFeatureExtractor(nn.Module):
         out_features = None
         func = None
         if self.model_name == 'resnet152':
+            import torchvision.models as models
             resnet = models.resnet152(pretrained=self.pretrained)
             modules = list(resnet.children())[:-2]
             model = nn.Sequential(*modules)
-            out_features = resnet.fc.in_features
+            out_features = resnet.fc.in_features # = 2048,int
             func = torch.nn.AvgPool2d(kernel_size=7, stride=1, padding=0)
         elif self.model_name == 'densenet201':
+            import torchvision.models as models
             densenet = models.densenet201(pretrained=self.pretrained)
             modules = list(densenet.features)
             model = nn.Sequential(*modules)
             func = torch.nn.AvgPool2d(kernel_size=7, stride=1, padding=0)
             out_features = densenet.classifier.in_features
-        # elif self.model_name == 'clip':
-        #     self.clip_model, self.preprocess = clip.load("ViT-B/32", device='cuda', jit=False)
+        elif self.model_name == 'clip':
+            import clip
+            model, preprocess = clip.load("ViT-B/32", device=device, jit=False)
+            out_features = 512
+            func = torch.nn.AvgPool2d(kernel_size=7, stride=1, padding=0)
 
         linear = nn.Linear(in_features=out_features, out_features=out_features)
         bn = nn.BatchNorm1d(num_features=out_features, momentum=0.1)
@@ -45,8 +50,13 @@ class VisualFeatureExtractor(nn.Module):
         :return:
         """
         # print(images.shape)
-        visual_features = self.model(images) #torch.size([16,2048,7,7])
-        avg_features = self.avg_func(visual_features).squeeze()
+        #clip模型提取特征，后续修改
+        if self.model_name == 'clip':
+            visual_features = self.model.encode_image(images).float().squeeze()
+            avg_features = visual_features
+        else:
+            visual_features = self.model(images) #torch.size([16,2048,7,7])
+            avg_features = self.avg_func(visual_features).squeeze()
         # avg_features = self.activation(self.bn(self.linear(avg_features)))
         return visual_features, avg_features
 
@@ -69,9 +79,8 @@ class MLC(nn.Module):
         self.classifier.bias.data.fill_(0)
 
     def forward(self, avg_features):
-        tags = self.softmax(self.classifier(avg_features))
+        tags = self.softmax(self.classifier(avg_features)) #tags.shape=(16,210)
         semantic_features = self.embed(torch.topk(tags, self.k)[1])
-        # semantic_features = self.embed(torch.topk(tags, self.k)[0],[0])
 
         return tags, semantic_features
 
