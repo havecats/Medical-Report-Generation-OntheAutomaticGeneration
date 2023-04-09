@@ -244,7 +244,7 @@ class CaptionSampler(object):
         return image_dir
 
     def __save_json(self, result):
-        result_path = os.path.join(self.args.model_dir, self.args.result_path)
+        result_path = os.path.join(self.args.model_dir.replace('models','logs'), self.args.result_path)
         if not os.path.exists(result_path):
             os.makedirs(result_path)
         with open(os.path.join(result_path, '{}.json'.format(self.args.result_name)), 'w') as f:
