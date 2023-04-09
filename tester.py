@@ -407,7 +407,7 @@ if __name__ == '__main__':
     #                     help='The path of loaded model')
 
     #train中的resnet模型
-    parser.add_argument('--model_dir', type=str, default='./report_v4_models/v4/20230406-0655')
+    parser.add_argument('--model_dir', type=str, default='./result_models/20230406-0655trainresnet152')
     parser.add_argument('--caption_json', type=str, default='./data/new_data/captions.json',
                         help='path for captions')
     parser.add_argument('--vocab_path', type=str, default='./data/new_data/vocab.pkl',
@@ -426,6 +426,8 @@ if __name__ == '__main__':
     parser.add_argument('--generate_dir', type=str, default='cam')
 
     # Saved result
+    # parser.add_argument('--result_log_path', type=str, default='result_logs/20230406-0655trainresnet152',
+    #                     help='the path for storing results')
     parser.add_argument('--result_path', type=str, default='results',
                         help='the path for storing results')
     parser.add_argument('--result_name', type=str, default='debug',

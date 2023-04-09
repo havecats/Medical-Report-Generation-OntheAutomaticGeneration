@@ -1,0 +1,1031 @@
+Vocab Size:121
+[Load Model Failed] [Errno 2] No such file or directory: ''
+[Load Model Failed] [Errno 13] Permission denied: '.'
+[Load MLC Failed [Errno 13] Permission denied: '.'!]
+[Load Co-attention Failed [Errno 13] Permission denied: '.'!]
+[Load Sentence model Failed [Errno 13] Permission denied: '.'!]
+[Load Word model Failed [Errno 13] Permission denied: '.'!]
+Namespace(patience=50, mode='train', vocab_path='./data/new_data/debugging_vocab.pkl', image_dir='./data/images', caption_json='./data/new_data/debugging_captions.json', train_file_list='./data/new_data/debugging_data.txt', val_file_list='./data/new_data/val_data.txt', resize=256, crop_size=224, model_path='./debug_models/', load_model_path='', saved_model_name='v4_v3_no_bn', momentum=0.1, visual_model_name='densenet201', pretrained=True, load_visual_model_path='.', visual_trained=True, classes=210, sementic_features_dim=512, k=10, load_mlc_model_path='.', mlc_trained=True, attention_version='v1', embed_size=512, hidden_size=512, load_co_model_path='.', co_trained=True, sent_version='v1', sentence_num_layers=2, dropout=0, load_sentence_model_path='.', sentence_trained=True, word_num_layers=1, load_word_model_path='.', word_trained=True, batch_size=8, learning_rate=0.001, epochs=1000, clip=-1, s_max=6, n_max=30, lambda_tag=10000, lambda_stop=10, lambda_word=2, cuda=True)
+[20230406-2028 - Epoch 0] train loss:1175.9532470703125 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2028 - Epoch 1] train loss:1120.129638671875 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2028 - Epoch 2] train loss:1012.9885864257812 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2028 - Epoch 3] train loss:1005.688232421875 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2028 - Epoch 4] train loss:859.6898193359375 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2028 - Epoch 5] train loss:827.855224609375 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 6] train loss:779.9556884765625 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 7] train loss:747.5623779296875 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 8] train loss:720.53759765625 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 9] train loss:699.6454467773438 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 10] train loss:684.9671630859375 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 11] train loss:672.2740478515625 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 12] train loss:651.5631103515625 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 13] train loss:636.5550537109375 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 14] train loss:630.95654296875 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 15] train loss:619.4607543945312 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 16] train loss:604.7456665039062 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 17] train loss:584.8582153320312 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 18] train loss:567.0286865234375 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 19] train loss:548.3706665039062 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 20] train loss:526.908447265625 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 21] train loss:541.3811645507812 - val_loss:0 - lr:0.001
+[20230406-2029 - Epoch 22] train loss:606.5553588867188 - val_loss:0 - lr:0.001
+[20230406-2029 - Epoch 23] train loss:571.084228515625 - val_loss:0 - lr:0.001
+[20230406-2029 - Epoch 24] train loss:525.9638671875 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 25] train loss:505.1295471191406 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 26] train loss:528.5031127929688 - val_loss:0 - lr:0.001
+[20230406-2029 - Epoch 27] train loss:521.748046875 - val_loss:0 - lr:0.001
+[20230406-2029 - Epoch 28] train loss:502.939453125 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 29] train loss:494.0621643066406 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 30] train loss:476.78289794921875 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 31] train loss:430.6632080078125 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 32] train loss:435.0747985839844 - val_loss:0 - lr:0.001
+[20230406-2029 - Epoch 33] train loss:418.355712890625 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 34] train loss:393.2210693359375 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 35] train loss:369.9651184082031 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 36] train loss:372.4358215332031 - val_loss:0 - lr:0.001
+[20230406-2029 - Epoch 37] train loss:347.61224365234375 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 38] train loss:360.9356689453125 - val_loss:0 - lr:0.001
+[20230406-2029 - Epoch 39] train loss:311.6448974609375 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 40] train loss:296.1484375 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 41] train loss:282.86712646484375 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 42] train loss:269.77606201171875 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2029 - Epoch 43] train loss:259.0367736816406 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2030 - Epoch 44] train loss:243.08282470703125 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2030 - Epoch 45] train loss:243.06983947753906 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2030 - Epoch 46] train loss:232.5424041748047 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2030 - Epoch 47] train loss:232.61708068847656 - val_loss:0 - lr:0.001
+[20230406-2030 - Epoch 48] train loss:218.85255432128906 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2030 - Epoch 49] train loss:217.18386840820312 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2030 - Epoch 50] train loss:203.65719604492188 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2030 - Epoch 51] train loss:207.91412353515625 - val_loss:0 - lr:0.001
+[20230406-2030 - Epoch 52] train loss:223.16827392578125 - val_loss:0 - lr:0.001
+[20230406-2030 - Epoch 53] train loss:196.34341430664062 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2030 - Epoch 54] train loss:204.59841918945312 - val_loss:0 - lr:0.001
+[20230406-2030 - Epoch 55] train loss:183.33102416992188 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2030 - Epoch 56] train loss:217.7440643310547 - val_loss:0 - lr:0.001
+[20230406-2030 - Epoch 57] train loss:177.65232849121094 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2030 - Epoch 58] train loss:182.98306274414062 - val_loss:0 - lr:0.001
+[20230406-2030 - Epoch 59] train loss:181.9616241455078 - val_loss:0 - lr:0.001
+[20230406-2030 - Epoch 60] train loss:177.99063110351562 - val_loss:0 - lr:0.001
+[20230406-2030 - Epoch 61] train loss:170.86651611328125 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2030 - Epoch 62] train loss:168.98953247070312 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2030 - Epoch 63] train loss:165.31190490722656 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2030 - Epoch 64] train loss:161.279296875 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2030 - Epoch 65] train loss:153.9773712158203 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2030 - Epoch 66] train loss:145.58030700683594 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2030 - Epoch 67] train loss:138.76126098632812 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2030 - Epoch 68] train loss:132.28463745117188 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2030 - Epoch 69] train loss:151.7316131591797 - val_loss:0 - lr:0.001
+[20230406-2030 - Epoch 70] train loss:123.10267639160156 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2030 - Epoch 71] train loss:114.11174011230469 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2030 - Epoch 72] train loss:117.79527282714844 - val_loss:0 - lr:0.001
+[20230406-2030 - Epoch 73] train loss:259.6849060058594 - val_loss:0 - lr:0.001
+[20230406-2030 - Epoch 74] train loss:222.01663208007812 - val_loss:0 - lr:0.001
+[20230406-2030 - Epoch 75] train loss:156.82705688476562 - val_loss:0 - lr:0.001
+[20230406-2030 - Epoch 76] train loss:114.28363037109375 - val_loss:0 - lr:0.001
+[20230406-2030 - Epoch 77] train loss:119.18478393554688 - val_loss:0 - lr:0.001
+[20230406-2030 - Epoch 78] train loss:126.12491607666016 - val_loss:0 - lr:0.001
+[20230406-2030 - Epoch 79] train loss:122.04654693603516 - val_loss:0 - lr:0.001
+[20230406-2030 - Epoch 80] train loss:117.57975769042969 - val_loss:0 - lr:0.001
+[20230406-2030 - Epoch 81] train loss:113.68331909179688 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2030 - Epoch 82] train loss:111.1260757446289 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2030 - Epoch 83] train loss:117.10491180419922 - val_loss:0 - lr:0.001
+[20230406-2030 - Epoch 84] train loss:106.08866119384766 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2030 - Epoch 85] train loss:101.08628845214844 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2030 - Epoch 86] train loss:99.24951171875 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2030 - Epoch 87] train loss:117.39006042480469 - val_loss:0 - lr:0.001
+[20230406-2030 - Epoch 88] train loss:143.76116943359375 - val_loss:0 - lr:0.001
+[20230406-2030 - Epoch 89] train loss:94.89199829101562 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2030 - Epoch 90] train loss:108.68280029296875 - val_loss:0 - lr:0.001
+[20230406-2030 - Epoch 91] train loss:259.4837646484375 - val_loss:0 - lr:0.001
+[20230406-2030 - Epoch 92] train loss:97.77652740478516 - val_loss:0 - lr:0.001
+[20230406-2030 - Epoch 93] train loss:104.6685562133789 - val_loss:0 - lr:0.001
+[20230406-2030 - Epoch 94] train loss:100.61656188964844 - val_loss:0 - lr:0.001
+[20230406-2030 - Epoch 95] train loss:100.31822204589844 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 96] train loss:117.80541229248047 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 97] train loss:96.23130798339844 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 98] train loss:102.32705688476562 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 99] train loss:91.4383773803711 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2031 - Epoch 100] train loss:87.45960235595703 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2031 - Epoch 101] train loss:79.8764419555664 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2031 - Epoch 102] train loss:77.53850555419922 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2031 - Epoch 103] train loss:76.87213897705078 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2031 - Epoch 104] train loss:102.37603759765625 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 105] train loss:165.4812469482422 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 106] train loss:124.89260864257812 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 107] train loss:80.08080291748047 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 108] train loss:177.00294494628906 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 109] train loss:76.20518493652344 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2031 - Epoch 110] train loss:96.802978515625 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 111] train loss:100.72378540039062 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 112] train loss:75.66064453125 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2031 - Epoch 113] train loss:82.1964340209961 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 114] train loss:71.89192199707031 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2031 - Epoch 115] train loss:81.50347900390625 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 116] train loss:81.23955535888672 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 117] train loss:88.11567687988281 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 118] train loss:69.31100463867188 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2031 - Epoch 119] train loss:98.53712463378906 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 120] train loss:78.89393615722656 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 121] train loss:78.2383041381836 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 122] train loss:68.01573944091797 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2031 - Epoch 123] train loss:63.01874542236328 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2031 - Epoch 124] train loss:63.71223068237305 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 125] train loss:87.13214874267578 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 126] train loss:90.85704040527344 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 127] train loss:57.9123649597168 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2031 - Epoch 128] train loss:56.626220703125 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2031 - Epoch 129] train loss:78.27528381347656 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 130] train loss:58.94615173339844 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 131] train loss:50.99634552001953 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2031 - Epoch 132] train loss:116.57207489013672 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 133] train loss:51.42204284667969 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 134] train loss:83.89341735839844 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 135] train loss:74.1499252319336 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 136] train loss:47.41408920288086 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2031 - Epoch 137] train loss:115.54459381103516 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 138] train loss:46.93234634399414 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2031 - Epoch 139] train loss:51.21397399902344 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 140] train loss:61.69639587402344 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 141] train loss:54.903846740722656 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 142] train loss:54.023860931396484 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 143] train loss:42.90581512451172 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2031 - Epoch 144] train loss:40.08694839477539 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2031 - Epoch 145] train loss:44.64934539794922 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 146] train loss:47.07141876220703 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 147] train loss:40.184871673583984 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 148] train loss:35.30561065673828 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2031 - Epoch 149] train loss:37.17948913574219 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 150] train loss:40.92829513549805 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 151] train loss:34.42885971069336 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2031 - Epoch 152] train loss:38.727046966552734 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 153] train loss:37.062137603759766 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 154] train loss:39.43893051147461 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 155] train loss:30.914804458618164 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2031 - Epoch 156] train loss:47.56896209716797 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 157] train loss:36.61479568481445 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 158] train loss:35.691505432128906 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 159] train loss:35.66584014892578 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 160] train loss:39.118160247802734 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 161] train loss:34.565433502197266 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 162] train loss:29.88616943359375 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2031 - Epoch 163] train loss:32.853271484375 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 164] train loss:34.641090393066406 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 165] train loss:36.36322021484375 - val_loss:0 - lr:0.001
+[20230406-2031 - Epoch 166] train loss:26.414337158203125 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2032 - Epoch 167] train loss:26.22325897216797 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2032 - Epoch 168] train loss:26.95782470703125 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 169] train loss:26.452228546142578 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 170] train loss:23.397829055786133 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2032 - Epoch 171] train loss:23.834211349487305 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 172] train loss:24.837753295898438 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 173] train loss:24.554452896118164 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 174] train loss:30.91085433959961 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 175] train loss:20.584291458129883 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2032 - Epoch 176] train loss:22.811302185058594 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 177] train loss:19.666948318481445 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2032 - Epoch 178] train loss:22.177644729614258 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 179] train loss:19.38365364074707 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2032 - Epoch 180] train loss:20.139781951904297 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 181] train loss:17.158876419067383 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2032 - Epoch 182] train loss:22.24370002746582 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 183] train loss:17.036514282226562 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2032 - Epoch 184] train loss:16.7529296875 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2032 - Epoch 185] train loss:15.10125732421875 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2032 - Epoch 186] train loss:17.200531005859375 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 187] train loss:14.59930419921875 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2032 - Epoch 188] train loss:16.745933532714844 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 189] train loss:12.871639251708984 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2032 - Epoch 190] train loss:14.72936725616455 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 191] train loss:12.150470733642578 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2032 - Epoch 192] train loss:10.438501358032227 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2032 - Epoch 193] train loss:12.4444580078125 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 194] train loss:8.308149337768555 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2032 - Epoch 195] train loss:7.951838493347168 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2032 - Epoch 196] train loss:8.621288299560547 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 197] train loss:26.49458885192871 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 198] train loss:9.334589004516602 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 199] train loss:8.913829803466797 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 200] train loss:13.458230972290039 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 201] train loss:16.00944709777832 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 202] train loss:8.675341606140137 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 203] train loss:11.91041088104248 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 204] train loss:12.620692253112793 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 205] train loss:12.425613403320312 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 206] train loss:9.22777271270752 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 207] train loss:17.911453247070312 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 208] train loss:7.690052509307861 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2032 - Epoch 209] train loss:9.055105209350586 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 210] train loss:22.19625473022461 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 211] train loss:8.761100769042969 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 212] train loss:7.800729751586914 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 213] train loss:13.230965614318848 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 214] train loss:11.24455451965332 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 215] train loss:11.747634887695312 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 216] train loss:20.58393669128418 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 217] train loss:12.213101387023926 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 218] train loss:15.517443656921387 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 219] train loss:8.591636657714844 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 220] train loss:8.551475524902344 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 221] train loss:11.917715072631836 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 222] train loss:11.146577835083008 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 223] train loss:13.848955154418945 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 224] train loss:11.260616302490234 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 225] train loss:8.085307121276855 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 226] train loss:12.756357192993164 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 227] train loss:7.0572285652160645 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2032 - Epoch 228] train loss:8.668937683105469 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 229] train loss:11.177488327026367 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 230] train loss:10.07461166381836 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 231] train loss:8.426626205444336 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 232] train loss:12.229601860046387 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 233] train loss:7.737611293792725 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 234] train loss:6.044674873352051 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2032 - Epoch 235] train loss:7.81687593460083 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 236] train loss:8.165363311767578 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 237] train loss:8.259544372558594 - val_loss:0 - lr:0.001
+[20230406-2032 - Epoch 238] train loss:5.163511276245117 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2033 - Epoch 239] train loss:6.470232009887695 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 240] train loss:8.529382705688477 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 241] train loss:7.334831237792969 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 242] train loss:5.825264930725098 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 243] train loss:4.925589561462402 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2033 - Epoch 244] train loss:4.43820858001709 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2033 - Epoch 245] train loss:7.051067352294922 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 246] train loss:11.111734390258789 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 247] train loss:4.544776439666748 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 248] train loss:5.879141807556152 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 249] train loss:4.611751079559326 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 250] train loss:4.578914642333984 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 251] train loss:6.496201038360596 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 252] train loss:4.222301959991455 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2033 - Epoch 253] train loss:4.894757270812988 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 254] train loss:6.073967933654785 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 255] train loss:3.7459001541137695 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-2033 - Epoch 256] train loss:4.7620086669921875 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 257] train loss:5.632599830627441 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 258] train loss:13.879247665405273 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 259] train loss:5.156733512878418 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 260] train loss:6.334644317626953 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 261] train loss:5.988402843475342 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 262] train loss:4.6093854904174805 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 263] train loss:5.1409735679626465 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 264] train loss:5.5439839363098145 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 265] train loss:7.671687126159668 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 266] train loss:5.537926197052002 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 267] train loss:18.446321487426758 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 268] train loss:8.794881820678711 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 269] train loss:22.390344619750977 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 270] train loss:14.18083667755127 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 271] train loss:4.0060224533081055 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 272] train loss:20.358673095703125 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 273] train loss:21.320016860961914 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 274] train loss:5.655628204345703 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 275] train loss:14.36556339263916 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 276] train loss:14.521976470947266 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 277] train loss:10.577515602111816 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 278] train loss:15.970207214355469 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 279] train loss:10.073448181152344 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 280] train loss:18.082500457763672 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 281] train loss:18.078887939453125 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 282] train loss:27.375463485717773 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 283] train loss:17.678178787231445 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 284] train loss:21.33950424194336 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 285] train loss:29.32379722595215 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 286] train loss:12.479801177978516 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 287] train loss:22.09716033935547 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 288] train loss:40.120811462402344 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 289] train loss:25.968833923339844 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 290] train loss:12.558884620666504 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 291] train loss:16.210323333740234 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 292] train loss:29.71470832824707 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 293] train loss:19.41080093383789 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 294] train loss:24.580810546875 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 295] train loss:23.104890823364258 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 296] train loss:14.200921058654785 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 297] train loss:13.772525787353516 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 298] train loss:21.2238826751709 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 299] train loss:30.41333770751953 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 300] train loss:16.13524055480957 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 301] train loss:21.443714141845703 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 302] train loss:15.653480529785156 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 303] train loss:10.929271697998047 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 304] train loss:36.278953552246094 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 305] train loss:14.093914985656738 - val_loss:0 - lr:0.001
+[20230406-2033 - Epoch 306] train loss:14.271586418151855 - val_loss:0 - lr:0.0001
+[20230406-2033 - Epoch 307] train loss:9.232778549194336 - val_loss:0 - lr:0.0001
+[20230406-2033 - Epoch 308] train loss:9.716987609863281 - val_loss:0 - lr:0.0001
+[20230406-2033 - Epoch 309] train loss:21.555950164794922 - val_loss:0 - lr:0.0001
+[20230406-2033 - Epoch 310] train loss:9.795862197875977 - val_loss:0 - lr:0.0001
+[20230406-2033 - Epoch 311] train loss:8.460552215576172 - val_loss:0 - lr:0.0001
+[20230406-2033 - Epoch 312] train loss:9.835382461547852 - val_loss:0 - lr:0.0001
+[20230406-2033 - Epoch 313] train loss:7.5337677001953125 - val_loss:0 - lr:0.0001
+[20230406-2033 - Epoch 314] train loss:13.453638076782227 - val_loss:0 - lr:0.0001
+[20230406-2033 - Epoch 315] train loss:7.800412178039551 - val_loss:0 - lr:0.0001
+[20230406-2033 - Epoch 316] train loss:7.840150356292725 - val_loss:0 - lr:0.0001
+[20230406-2033 - Epoch 317] train loss:7.328487396240234 - val_loss:0 - lr:0.0001
+[20230406-2033 - Epoch 318] train loss:6.685498237609863 - val_loss:0 - lr:0.0001
+[20230406-2033 - Epoch 319] train loss:7.035306930541992 - val_loss:0 - lr:0.0001
+[20230406-2033 - Epoch 320] train loss:6.979719161987305 - val_loss:0 - lr:0.0001
+[20230406-2033 - Epoch 321] train loss:8.961542129516602 - val_loss:0 - lr:0.0001
+[20230406-2033 - Epoch 322] train loss:6.498427391052246 - val_loss:0 - lr:0.0001
+[20230406-2033 - Epoch 323] train loss:5.530697822570801 - val_loss:0 - lr:0.0001
+[20230406-2033 - Epoch 324] train loss:6.366006851196289 - val_loss:0 - lr:0.0001
+[20230406-2033 - Epoch 325] train loss:7.434719085693359 - val_loss:0 - lr:0.0001
+[20230406-2033 - Epoch 326] train loss:5.859025478363037 - val_loss:0 - lr:0.0001
+[20230406-2033 - Epoch 327] train loss:6.197091102600098 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 328] train loss:7.2815165519714355 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 329] train loss:5.281988143920898 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 330] train loss:6.005583763122559 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 331] train loss:5.664366722106934 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 332] train loss:5.803281307220459 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 333] train loss:5.9508867263793945 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 334] train loss:6.315308570861816 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 335] train loss:5.111196517944336 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 336] train loss:5.802005767822266 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 337] train loss:5.7714948654174805 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 338] train loss:6.049552917480469 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 339] train loss:5.200396537780762 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 340] train loss:5.181553840637207 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 341] train loss:5.04501485824585 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 342] train loss:15.661222457885742 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 343] train loss:5.259136199951172 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 344] train loss:4.592119216918945 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 345] train loss:5.834202766418457 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 346] train loss:6.015803337097168 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 347] train loss:5.201495170593262 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 348] train loss:5.034359931945801 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 349] train loss:5.295134544372559 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 350] train loss:5.2923479080200195 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 351] train loss:4.8536834716796875 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 352] train loss:5.082056045532227 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 353] train loss:4.692769527435303 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 354] train loss:4.48022985458374 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 355] train loss:4.49138069152832 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 356] train loss:5.499471664428711 - val_loss:0 - lr:0.0001
+[20230406-2034 - Epoch 357] train loss:4.647046089172363 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 358] train loss:5.1357927322387695 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 359] train loss:4.481541633605957 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 360] train loss:5.760375022888184 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 361] train loss:5.207098960876465 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 362] train loss:4.7040581703186035 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 363] train loss:4.342595100402832 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 364] train loss:5.921165466308594 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 365] train loss:4.662566184997559 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 366] train loss:4.552387237548828 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 367] train loss:4.530215740203857 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 368] train loss:5.227086067199707 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 369] train loss:4.993927955627441 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 370] train loss:4.49088191986084 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 371] train loss:5.871090888977051 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 372] train loss:5.5780744552612305 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 373] train loss:4.918972492218018 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 374] train loss:5.245231628417969 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 375] train loss:4.625471115112305 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 376] train loss:4.544914245605469 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 377] train loss:4.553284168243408 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 378] train loss:4.727294921875 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 379] train loss:4.952863693237305 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 380] train loss:5.490662574768066 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 381] train loss:4.890646934509277 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 382] train loss:4.35590934753418 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 383] train loss:5.963428497314453 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 384] train loss:5.940210819244385 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 385] train loss:4.813988208770752 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 386] train loss:5.966194152832031 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 387] train loss:5.223176956176758 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 388] train loss:4.550238132476807 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 389] train loss:4.909157752990723 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 390] train loss:4.295285224914551 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 391] train loss:4.510892868041992 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 392] train loss:4.421663284301758 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 393] train loss:4.986510753631592 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 394] train loss:4.492650032043457 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 395] train loss:4.951998710632324 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 396] train loss:5.505845069885254 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 397] train loss:4.859504699707031 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 398] train loss:5.002869606018066 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 399] train loss:4.401950359344482 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 400] train loss:4.686557769775391 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 401] train loss:4.298121452331543 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 402] train loss:4.310051441192627 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 403] train loss:4.587145805358887 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 404] train loss:5.135239601135254 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 405] train loss:4.3127031326293945 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 406] train loss:5.113711833953857 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 407] train loss:4.2670745849609375 - val_loss:0 - lr:1e-05
+[20230406-2034 - Epoch 408] train loss:4.603857517242432 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2034 - Epoch 409] train loss:9.009781837463379 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2034 - Epoch 410] train loss:5.967647075653076 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2034 - Epoch 411] train loss:4.993437767028809 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2034 - Epoch 412] train loss:4.352090835571289 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2034 - Epoch 413] train loss:5.141139984130859 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2034 - Epoch 414] train loss:4.413115978240967 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2034 - Epoch 415] train loss:5.149225234985352 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2034 - Epoch 416] train loss:4.5639872550964355 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2034 - Epoch 417] train loss:4.660460472106934 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2034 - Epoch 418] train loss:4.352963924407959 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2034 - Epoch 419] train loss:4.384147644042969 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2034 - Epoch 420] train loss:4.251815319061279 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2034 - Epoch 421] train loss:4.287613868713379 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2034 - Epoch 422] train loss:4.218365669250488 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2034 - Epoch 423] train loss:5.336078643798828 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2034 - Epoch 424] train loss:4.7937140464782715 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 425] train loss:4.896254539489746 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 426] train loss:4.5756659507751465 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 427] train loss:4.319546222686768 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 428] train loss:10.403401374816895 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 429] train loss:5.187705993652344 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 430] train loss:9.175575256347656 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 431] train loss:4.596492767333984 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 432] train loss:5.576508045196533 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 433] train loss:7.404013633728027 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 434] train loss:4.905745029449463 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 435] train loss:4.824076175689697 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 436] train loss:4.644324779510498 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 437] train loss:4.339868545532227 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 438] train loss:4.740253448486328 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 439] train loss:4.865074634552002 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 440] train loss:4.511416435241699 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 441] train loss:4.678744792938232 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 442] train loss:5.486976623535156 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 443] train loss:5.129895210266113 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 444] train loss:4.782320022583008 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 445] train loss:4.628434181213379 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 446] train loss:4.997938632965088 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 447] train loss:5.744088649749756 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 448] train loss:4.5407395362854 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 449] train loss:5.613533020019531 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 450] train loss:5.358850479125977 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 451] train loss:4.343863487243652 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 452] train loss:4.800802230834961 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 453] train loss:5.04339075088501 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 454] train loss:5.273872375488281 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 455] train loss:5.099774360656738 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 456] train loss:4.5305328369140625 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 457] train loss:5.502244472503662 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 458] train loss:4.758937358856201 - val_loss:0 - lr:1.0000000000000002e-06
+[20230406-2035 - Epoch 459] train loss:4.603143215179443 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 460] train loss:4.7270355224609375 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 461] train loss:5.1468400955200195 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 462] train loss:4.927975654602051 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 463] train loss:4.472411155700684 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 464] train loss:5.342927932739258 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 465] train loss:4.699158191680908 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 466] train loss:4.399733543395996 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 467] train loss:14.389760971069336 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 468] train loss:4.803952217102051 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 469] train loss:5.001765251159668 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 470] train loss:4.774440765380859 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 471] train loss:5.0331292152404785 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 472] train loss:4.594470500946045 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 473] train loss:4.77506685256958 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 474] train loss:4.209643363952637 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 475] train loss:5.621118545532227 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 476] train loss:4.876053333282471 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 477] train loss:5.483914375305176 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 478] train loss:4.809598922729492 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 479] train loss:4.824146270751953 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 480] train loss:4.7354888916015625 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 481] train loss:4.360661506652832 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 482] train loss:4.437382698059082 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 483] train loss:5.519693374633789 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 484] train loss:4.48341703414917 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 485] train loss:4.749994277954102 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 486] train loss:5.275718688964844 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 487] train loss:4.500500679016113 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 488] train loss:5.07430362701416 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 489] train loss:5.097047328948975 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 490] train loss:4.893913269042969 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 491] train loss:4.4359307289123535 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 492] train loss:4.295422554016113 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 493] train loss:5.037056922912598 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 494] train loss:4.654526710510254 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 495] train loss:6.794544219970703 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 496] train loss:5.260944366455078 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 497] train loss:7.140849590301514 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 498] train loss:4.723501205444336 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 499] train loss:4.505918025970459 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 500] train loss:4.6607513427734375 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 501] train loss:4.176575660705566 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 502] train loss:4.506969451904297 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 503] train loss:4.650188446044922 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 504] train loss:4.34901237487793 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 505] train loss:5.538125038146973 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 506] train loss:4.529934883117676 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 507] train loss:4.956315517425537 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 508] train loss:4.944363594055176 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 509] train loss:4.947689056396484 - val_loss:0 - lr:1.0000000000000002e-07
+[20230406-2035 - Epoch 510] train loss:4.404430866241455 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2035 - Epoch 511] train loss:5.751852989196777 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2035 - Epoch 512] train loss:4.142092704772949 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2035 - Epoch 513] train loss:4.647603511810303 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2035 - Epoch 514] train loss:5.07779598236084 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 515] train loss:5.228700637817383 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 516] train loss:9.269932746887207 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 517] train loss:4.575469017028809 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 518] train loss:4.374670505523682 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 519] train loss:4.188868522644043 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 520] train loss:4.358360767364502 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 521] train loss:6.275477886199951 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 522] train loss:4.410510063171387 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 523] train loss:4.704697608947754 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 524] train loss:5.45577335357666 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 525] train loss:4.720690727233887 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 526] train loss:5.336488723754883 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 527] train loss:4.3403425216674805 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 528] train loss:4.190613269805908 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 529] train loss:5.4685187339782715 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 530] train loss:4.930745601654053 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 531] train loss:4.4608635902404785 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 532] train loss:4.904163837432861 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 533] train loss:4.823476791381836 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 534] train loss:4.616231918334961 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 535] train loss:4.973090171813965 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 536] train loss:5.587428569793701 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 537] train loss:5.063534736633301 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 538] train loss:4.399202823638916 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 539] train loss:4.71230936050415 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 540] train loss:5.464649200439453 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 541] train loss:4.476325035095215 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 542] train loss:7.877498149871826 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 543] train loss:4.7372236251831055 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 544] train loss:4.39708948135376 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 545] train loss:9.981597900390625 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 546] train loss:4.626058578491211 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 547] train loss:4.481695652008057 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 548] train loss:4.3286027908325195 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 549] train loss:5.052502632141113 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 550] train loss:4.483370780944824 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 551] train loss:4.487699508666992 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 552] train loss:4.668934345245361 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 553] train loss:4.651838779449463 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 554] train loss:4.32779598236084 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 555] train loss:4.281846523284912 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 556] train loss:4.6140851974487305 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 557] train loss:4.511696815490723 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 558] train loss:4.424267768859863 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 559] train loss:5.890341758728027 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 560] train loss:5.1644086837768555 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 561] train loss:4.775038719177246 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 562] train loss:11.342500686645508 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 563] train loss:4.56996488571167 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 564] train loss:4.443574905395508 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 565] train loss:4.447342872619629 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 566] train loss:4.328423976898193 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 567] train loss:4.489523410797119 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 568] train loss:4.7434587478637695 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 569] train loss:4.859208106994629 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 570] train loss:4.89434814453125 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 571] train loss:4.510658264160156 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 572] train loss:5.287504196166992 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 573] train loss:4.238659381866455 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 574] train loss:4.269131660461426 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 575] train loss:4.995756149291992 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 576] train loss:8.252798080444336 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 577] train loss:4.477811813354492 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 578] train loss:4.4600749015808105 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 579] train loss:4.406540870666504 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 580] train loss:4.820163249969482 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 581] train loss:4.377101898193359 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 582] train loss:4.580129146575928 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 583] train loss:4.6671247482299805 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 584] train loss:4.279247283935547 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 585] train loss:6.812175273895264 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 586] train loss:6.145672798156738 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 587] train loss:5.913110256195068 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 588] train loss:5.415729522705078 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 589] train loss:5.036271095275879 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 590] train loss:4.9570746421813965 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 591] train loss:5.257142543792725 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 592] train loss:5.3607587814331055 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 593] train loss:5.208091735839844 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 594] train loss:4.5331878662109375 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 595] train loss:10.31017017364502 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 596] train loss:4.695451736450195 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 597] train loss:4.945452690124512 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 598] train loss:4.5501203536987305 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 599] train loss:5.018927574157715 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 600] train loss:4.943321228027344 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 601] train loss:5.176301956176758 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 602] train loss:5.895540237426758 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 603] train loss:4.545511245727539 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 604] train loss:4.641973495483398 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 605] train loss:4.365757465362549 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 606] train loss:4.3855299949646 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 607] train loss:6.314268589019775 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 608] train loss:4.733509063720703 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2036 - Epoch 609] train loss:8.458954811096191 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 610] train loss:4.361709117889404 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 611] train loss:4.597883701324463 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 612] train loss:4.7514190673828125 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 613] train loss:4.592996597290039 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 614] train loss:4.794771194458008 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 615] train loss:5.001842975616455 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 616] train loss:12.58694839477539 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 617] train loss:15.391254425048828 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 618] train loss:6.763808727264404 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 619] train loss:4.545746326446533 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 620] train loss:4.839849948883057 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 621] train loss:4.33708381652832 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 622] train loss:4.477292060852051 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 623] train loss:4.885121822357178 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 624] train loss:10.942041397094727 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 625] train loss:11.775863647460938 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 626] train loss:4.579931735992432 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 627] train loss:6.262935638427734 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 628] train loss:4.878647804260254 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 629] train loss:4.347761631011963 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 630] train loss:4.342960357666016 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 631] train loss:4.918644905090332 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 632] train loss:4.620320796966553 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 633] train loss:4.837124824523926 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 634] train loss:4.631053924560547 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 635] train loss:4.988801956176758 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 636] train loss:4.633268356323242 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 637] train loss:4.651202201843262 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 638] train loss:4.440691947937012 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 639] train loss:4.3617658615112305 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 640] train loss:4.613152503967285 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 641] train loss:4.532837867736816 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 642] train loss:5.452939987182617 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 643] train loss:5.177725791931152 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 644] train loss:5.226844310760498 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 645] train loss:4.3303375244140625 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 646] train loss:4.357802867889404 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 647] train loss:4.6927947998046875 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 648] train loss:4.563984394073486 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 649] train loss:8.758625984191895 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 650] train loss:4.739408016204834 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 651] train loss:5.097733497619629 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 652] train loss:6.381178855895996 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 653] train loss:4.842296123504639 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 654] train loss:4.99907112121582 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 655] train loss:4.277832984924316 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 656] train loss:4.866975784301758 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 657] train loss:4.846766948699951 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 658] train loss:4.346880912780762 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 659] train loss:5.163915634155273 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 660] train loss:4.558679580688477 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 661] train loss:4.280933856964111 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 662] train loss:4.7216081619262695 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 663] train loss:4.827369689941406 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 664] train loss:4.28195333480835 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 665] train loss:5.328855514526367 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 666] train loss:4.686182022094727 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 667] train loss:5.719743728637695 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 668] train loss:4.70880651473999 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 669] train loss:4.3724365234375 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 670] train loss:9.736673355102539 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 671] train loss:4.113040447235107 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 672] train loss:4.535039901733398 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 673] train loss:4.62060022354126 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 674] train loss:4.919820785522461 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 675] train loss:8.846685409545898 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 676] train loss:5.514087677001953 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 677] train loss:9.546929359436035 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 678] train loss:4.324552536010742 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 679] train loss:5.643432140350342 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 680] train loss:4.5588226318359375 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 681] train loss:4.198898792266846 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 682] train loss:4.970612525939941 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 683] train loss:4.262874603271484 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 684] train loss:4.661375522613525 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 685] train loss:5.12983512878418 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 686] train loss:4.800879955291748 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 687] train loss:5.129161834716797 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 688] train loss:5.166104316711426 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 689] train loss:4.164008140563965 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 690] train loss:4.528472900390625 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 691] train loss:4.533186912536621 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 692] train loss:4.573473930358887 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 693] train loss:5.266535758972168 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 694] train loss:4.425217628479004 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 695] train loss:4.504205226898193 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 696] train loss:4.2765212059021 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 697] train loss:4.399579048156738 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 698] train loss:4.787059783935547 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 699] train loss:22.694360733032227 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 700] train loss:4.685695171356201 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 701] train loss:5.012510776519775 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 702] train loss:5.305037498474121 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 703] train loss:5.202160358428955 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 704] train loss:5.0453925132751465 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2037 - Epoch 705] train loss:4.462244033813477 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 706] train loss:4.271585464477539 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 707] train loss:4.523626327514648 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 708] train loss:5.136992454528809 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 709] train loss:4.369780540466309 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 710] train loss:4.517742156982422 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 711] train loss:4.358371734619141 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 712] train loss:4.433856010437012 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 713] train loss:5.218077659606934 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 714] train loss:4.641231060028076 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 715] train loss:4.579362392425537 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 716] train loss:4.6346540451049805 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 717] train loss:4.419543743133545 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 718] train loss:5.2264604568481445 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 719] train loss:4.2783098220825195 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 720] train loss:4.463661193847656 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 721] train loss:5.197207450866699 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 722] train loss:4.425803184509277 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 723] train loss:10.57707405090332 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 724] train loss:5.367414951324463 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 725] train loss:7.222879409790039 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 726] train loss:9.654151916503906 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 727] train loss:5.076267242431641 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 728] train loss:4.833990097045898 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 729] train loss:4.684326171875 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 730] train loss:4.697473526000977 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 731] train loss:6.272889614105225 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 732] train loss:4.732377529144287 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 733] train loss:4.40281867980957 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 734] train loss:4.4228081703186035 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 735] train loss:9.179161071777344 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 736] train loss:4.2795610427856445 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 737] train loss:4.299036502838135 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 738] train loss:4.773602485656738 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 739] train loss:4.796188831329346 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 740] train loss:5.0552754402160645 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 741] train loss:6.463292121887207 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 742] train loss:5.56071662902832 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 743] train loss:5.970580101013184 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 744] train loss:6.039104461669922 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 745] train loss:19.059513092041016 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 746] train loss:5.066621780395508 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 747] train loss:5.066869735717773 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 748] train loss:4.233006000518799 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 749] train loss:5.237517356872559 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 750] train loss:4.80021333694458 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 751] train loss:5.180636882781982 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 752] train loss:5.42573356628418 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 753] train loss:4.421627521514893 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 754] train loss:4.2712321281433105 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 755] train loss:4.208628177642822 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 756] train loss:4.790280818939209 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 757] train loss:4.251582622528076 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 758] train loss:4.4726362228393555 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 759] train loss:4.357184886932373 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 760] train loss:4.577239036560059 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 761] train loss:5.441744804382324 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 762] train loss:4.462783336639404 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 763] train loss:5.2307281494140625 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 764] train loss:4.554775238037109 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 765] train loss:4.295505523681641 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 766] train loss:4.342297077178955 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 767] train loss:4.861452102661133 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 768] train loss:4.195703506469727 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 769] train loss:18.48855972290039 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 770] train loss:5.213508605957031 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 771] train loss:4.419468402862549 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 772] train loss:4.606396198272705 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 773] train loss:4.513645172119141 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 774] train loss:4.705183029174805 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 775] train loss:5.299012184143066 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 776] train loss:4.555704116821289 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 777] train loss:4.359991073608398 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 778] train loss:4.428215026855469 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 779] train loss:4.3445611000061035 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 780] train loss:6.2250823974609375 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 781] train loss:4.863326072692871 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 782] train loss:4.82649040222168 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 783] train loss:5.692268371582031 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 784] train loss:4.889558792114258 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 785] train loss:4.8216447830200195 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 786] train loss:4.745347023010254 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 787] train loss:4.3751630783081055 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 788] train loss:4.8095502853393555 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 789] train loss:4.664348125457764 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 790] train loss:4.431561470031738 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 791] train loss:4.824336051940918 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 792] train loss:4.93008279800415 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 793] train loss:4.717825889587402 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 794] train loss:5.267382621765137 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 795] train loss:4.374481201171875 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 796] train loss:5.058337211608887 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 797] train loss:4.593540191650391 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 798] train loss:4.540614604949951 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2038 - Epoch 799] train loss:4.467053413391113 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 800] train loss:4.70389461517334 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 801] train loss:5.240679740905762 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 802] train loss:4.869784355163574 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 803] train loss:4.361514091491699 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 804] train loss:4.411894798278809 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 805] train loss:6.220026016235352 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 806] train loss:4.286940574645996 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 807] train loss:5.760640621185303 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 808] train loss:4.436681270599365 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 809] train loss:5.594696044921875 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 810] train loss:19.61553192138672 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 811] train loss:4.62984037399292 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 812] train loss:5.227865219116211 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 813] train loss:4.588855266571045 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 814] train loss:11.291939735412598 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 815] train loss:10.757991790771484 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 816] train loss:5.038726806640625 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 817] train loss:5.1522932052612305 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 818] train loss:5.397563934326172 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 819] train loss:4.225815296173096 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 820] train loss:4.997437477111816 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 821] train loss:4.955238342285156 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 822] train loss:4.853178024291992 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 823] train loss:5.577237606048584 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 824] train loss:4.57039213180542 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 825] train loss:4.522481918334961 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 826] train loss:4.396924018859863 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 827] train loss:11.2852783203125 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 828] train loss:4.766058921813965 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 829] train loss:4.38560676574707 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 830] train loss:5.081683158874512 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 831] train loss:4.370851039886475 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 832] train loss:5.803643703460693 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 833] train loss:8.48895263671875 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 834] train loss:9.706451416015625 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 835] train loss:4.264646053314209 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 836] train loss:4.265266418457031 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 837] train loss:4.72843074798584 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 838] train loss:4.324101448059082 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 839] train loss:5.617218971252441 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 840] train loss:4.886009693145752 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 841] train loss:6.900411605834961 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 842] train loss:4.713526248931885 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 843] train loss:7.919337272644043 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 844] train loss:4.380496025085449 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 845] train loss:6.246600151062012 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 846] train loss:4.631679534912109 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 847] train loss:5.478407382965088 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 848] train loss:4.17522668838501 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 849] train loss:4.467563152313232 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 850] train loss:4.842485427856445 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 851] train loss:4.748355865478516 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 852] train loss:5.099282264709473 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 853] train loss:4.607787132263184 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 854] train loss:4.481832981109619 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 855] train loss:4.651144981384277 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 856] train loss:5.1330976486206055 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 857] train loss:4.443723678588867 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 858] train loss:4.635096549987793 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 859] train loss:4.778153419494629 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 860] train loss:4.532865047454834 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 861] train loss:4.633444786071777 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 862] train loss:4.9427337646484375 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 863] train loss:5.137849807739258 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 864] train loss:5.375722885131836 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 865] train loss:4.807544708251953 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 866] train loss:4.47597599029541 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 867] train loss:4.851440906524658 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 868] train loss:4.131608009338379 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 869] train loss:8.889497756958008 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 870] train loss:5.913722991943359 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 871] train loss:5.076885223388672 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 872] train loss:5.1722612380981445 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 873] train loss:4.326839447021484 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 874] train loss:4.886702537536621 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 875] train loss:5.432699203491211 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 876] train loss:5.058697700500488 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 877] train loss:4.590494155883789 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 878] train loss:4.769577503204346 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 879] train loss:4.541123867034912 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 880] train loss:4.371344566345215 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 881] train loss:4.378331184387207 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 882] train loss:4.629592418670654 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 883] train loss:4.309500217437744 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 884] train loss:5.234414100646973 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 885] train loss:4.607106685638428 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 886] train loss:4.636249542236328 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 887] train loss:4.778092861175537 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 888] train loss:4.545299530029297 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2039 - Epoch 889] train loss:5.9222517013549805 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2040 - Epoch 890] train loss:4.760354042053223 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2040 - Epoch 891] train loss:4.304537773132324 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2040 - Epoch 892] train loss:4.529894828796387 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2040 - Epoch 893] train loss:10.543285369873047 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2040 - Epoch 894] train loss:6.849762916564941 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2040 - Epoch 895] train loss:4.552055835723877 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2040 - Epoch 896] train loss:4.462159633636475 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2040 - Epoch 897] train loss:5.535597324371338 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2040 - Epoch 898] train loss:4.239752292633057 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2040 - Epoch 899] train loss:4.624311923980713 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2040 - Epoch 900] train loss:4.472862243652344 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2040 - Epoch 901] train loss:4.638161659240723 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2040 - Epoch 902] train loss:4.7218804359436035 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2040 - Epoch 903] train loss:4.858467102050781 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2040 - Epoch 904] train loss:5.0040788650512695 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2040 - Epoch 905] train loss:5.747637748718262 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2040 - Epoch 906] train loss:5.307625770568848 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2040 - Epoch 907] train loss:4.76426362991333 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2040 - Epoch 908] train loss:4.578647613525391 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2040 - Epoch 909] train loss:4.958488464355469 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2040 - Epoch 910] train loss:5.102480888366699 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2040 - Epoch 911] train loss:4.1501264572143555 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2040 - Epoch 912] train loss:5.25587272644043 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2040 - Epoch 913] train loss:4.417367935180664 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2040 - Epoch 914] train loss:5.673375606536865 - val_loss:0 - lr:1.0000000000000004e-08
+[20230406-2040 - Epoch 915] train loss:5.471675872802734 - val_loss:0 - lr:1.0000000000000004e-08

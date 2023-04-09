@@ -1,0 +1,91 @@
+Vocab Size:1173
+[Load Model Failed] [Errno 2] No such file or directory: ''
+[Load Model Failed] [Errno 13] Permission denied: '.'
+[Load MLC Failed [Errno 13] Permission denied: '.'!]
+[Load Co-attention Failed [Errno 13] Permission denied: '.'!]
+[Load Sentence model Failed [Errno 13] Permission denied: '.'!]
+[Load Word model Failed [Errno 13] Permission denied: '.'!]
+Namespace(patience=50, mode='train', vocab_path='./data/new_data/vocab.pkl', image_dir='./data/images', caption_json='./data/new_data/captions.json', train_file_list='./data/new_data/train_data.txt', val_file_list='./data/new_data/val_data.txt', resize=256, crop_size=224, model_path='./report_v4_models/', load_model_path='', saved_model_name='v4', momentum=0.1, visual_model_name='resnet152', pretrained=True, load_visual_model_path='.', visual_trained=True, classes=210, sementic_features_dim=512, k=10, load_mlc_model_path='.', mlc_trained=True, attention_version='v4', embed_size=512, hidden_size=512, load_co_model_path='.', co_trained=True, sent_version='v1', sentence_num_layers=2, dropout=0, load_sentence_model_path='.', sentence_trained=True, word_num_layers=1, load_word_model_path='.', word_trained=True, batch_size=8, learning_rate=0.001, epochs=50, clip=-1, s_max=6, n_max=30, lambda_tag=10000, lambda_stop=10, lambda_word=1, cuda=True)
+[20230406-0707 - Epoch 0] train loss:576271.3125 - val_loss:0 - lr:0.001
+Saved Model in val_best_loss.pth.tar
+Saved Model in train_best_loss.pth.tar
+[20230406-0720 - Epoch 1] train loss:430773.3125 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-0732 - Epoch 2] train loss:400719.96875 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-0744 - Epoch 3] train loss:388735.6875 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-0756 - Epoch 4] train loss:367893.375 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-0808 - Epoch 5] train loss:351454.34375 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-0820 - Epoch 6] train loss:341353.46875 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-0832 - Epoch 7] train loss:336299.03125 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-0845 - Epoch 8] train loss:333023.59375 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-0857 - Epoch 9] train loss:330149.5 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-0909 - Epoch 10] train loss:328555.875 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-0921 - Epoch 11] train loss:327379.9375 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-0933 - Epoch 12] train loss:326308.71875 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-0945 - Epoch 13] train loss:325371.40625 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-0957 - Epoch 14] train loss:324039.90625 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-1009 - Epoch 15] train loss:323451.6875 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-1021 - Epoch 16] train loss:322972.59375 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-1033 - Epoch 17] train loss:322108.5625 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-1045 - Epoch 18] train loss:321352.75 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-1057 - Epoch 19] train loss:320447.59375 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-1109 - Epoch 20] train loss:320567.59375 - val_loss:0 - lr:0.001
+[20230406-1121 - Epoch 21] train loss:323025.40625 - val_loss:0 - lr:0.001
+[20230406-1134 - Epoch 22] train loss:320366.40625 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-1146 - Epoch 23] train loss:319556.0625 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-1158 - Epoch 24] train loss:318935.71875 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-1210 - Epoch 25] train loss:319146.875 - val_loss:0 - lr:0.001
+[20230406-1222 - Epoch 26] train loss:318548.6875 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-1234 - Epoch 27] train loss:318287.40625 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-1246 - Epoch 28] train loss:318464.375 - val_loss:0 - lr:0.001
+[20230406-1258 - Epoch 29] train loss:318546.96875 - val_loss:0 - lr:0.001
+[20230406-1310 - Epoch 30] train loss:318160.71875 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-1323 - Epoch 31] train loss:322143.375 - val_loss:0 - lr:0.001
+[20230406-1335 - Epoch 32] train loss:317459.84375 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-1347 - Epoch 33] train loss:317646.3125 - val_loss:0 - lr:0.001
+[20230406-1359 - Epoch 34] train loss:316808.34375 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-1411 - Epoch 35] train loss:317663.1875 - val_loss:0 - lr:0.001
+[20230406-1423 - Epoch 36] train loss:316896.71875 - val_loss:0 - lr:0.001
+[20230406-1435 - Epoch 37] train loss:317703.90625 - val_loss:0 - lr:0.001
+[20230406-1447 - Epoch 38] train loss:316835.1875 - val_loss:0 - lr:0.001
+[20230406-1459 - Epoch 39] train loss:316387.25 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-1511 - Epoch 40] train loss:315781.375 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-1523 - Epoch 41] train loss:316283.03125 - val_loss:0 - lr:0.001
+[20230406-1535 - Epoch 42] train loss:316284.25 - val_loss:0 - lr:0.001
+[20230406-1547 - Epoch 43] train loss:315839.28125 - val_loss:0 - lr:0.001
+[20230406-1559 - Epoch 44] train loss:316836.84375 - val_loss:0 - lr:0.001
+[20230406-1611 - Epoch 45] train loss:315643.84375 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-1623 - Epoch 46] train loss:319680.78125 - val_loss:0 - lr:0.001
+[20230406-1636 - Epoch 47] train loss:316643.96875 - val_loss:0 - lr:0.001
+[20230406-1648 - Epoch 48] train loss:314981.84375 - val_loss:0 - lr:0.001
+Saved Model in train_best_loss.pth.tar
+[20230406-1700 - Epoch 49] train loss:315634.125 - val_loss:0 - lr:0.001
