@@ -6,7 +6,7 @@ import json
 class JsonReader(object):
     def __init__(self, json_file):
         self.data = self.__read_json(json_file)
-        self.keys = list(self.data.keys())
+        # self.keys = list(self.data.keys())
 
     def __read_json(self, filename):
         with open(filename, 'r') as f:
