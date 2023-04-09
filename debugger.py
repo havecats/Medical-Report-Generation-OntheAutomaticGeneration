@@ -31,7 +31,7 @@ class DebuggerBase:
         self.params = None
 
         self._init_model_path()
-        self.model_dir = self._init_model_dir()
+        self.model_dir, self.log_dir = self._init_model_dir()
         self.writer = self._init_writer()
         self.train_transform = self._init_train_transform()
         self.val_transform = self._init_val_transform()
@@ -118,17 +118,22 @@ class DebuggerBase:
         return transform
 
     def _init_model_dir(self):
-        model_dir = os.path.join(self.args.model_path, self.args.saved_model_name)
+        # model_dir = os.path.join(self.args.model_path, self.args.saved_model_name)
+        model_dir = os.path.join(self.args.model_path)
 
         if not os.path.exists(model_dir):
             os.makedirs(model_dir)
 
-        model_dir = os.path.join(model_dir, self._get_now())
+        dir_name = self._get_now()+'debug'+self.args.visual_model_name
+        model_dir = os.path.join(model_dir, dir_name)
+
+        log_dir = model_dir.replace('models', 'logs')
 
         if not os.path.exists(model_dir):
             os.makedirs(model_dir)
-
-        return model_dir
+        if not os.path.exists(log_dir):
+            os.makedirs(log_dir)
+        return model_dir, log_dir
 
     def _init_vocab(self):
         with open(self.args.vocab_path, 'rb') as f:
@@ -285,11 +290,11 @@ class DebuggerBase:
             self.logger.scalar_summary(tag, value, epoch + 1)
 
     def _init_logger(self):
-        logger = Logger(os.path.join(self.model_dir, 'logs'))
+        logger = Logger(os.path.join(self.log_dir, 'logs'))
         return logger
 
     def _init_writer(self):
-        writer = open(os.path.join(self.model_dir, 'logs.txt'), 'w')
+        writer = open(os.path.join(self.log_dir, 'logs.txt'), 'w')
         return writer
 
     def _to_var(self, x, requires_grad=True):
@@ -571,12 +576,12 @@ if __name__ == '__main__':
     parser.add_argument('--crop_size', type=int, default=224,
                         help='size for randomly cropping images')
     # Load/Save model argument
-    parser.add_argument('--model_path', type=str, default='./debug_models/',
+    parser.add_argument('--model_path', type=str, default='./result_models/',
                         help='path for saving trained models')
     parser.add_argument('--load_model_path', type=str, default='',
                         help='The path of loaded model')
-    parser.add_argument('--saved_model_name', type=str, default='v4_v3_no_bn',
-                        help='The name of saved model')
+    # parser.add_argument('--saved_model_name', type=str, default='v4_v3_no_bn',
+    #                     help='The name of saved model')
 
     """
     Model Argument
