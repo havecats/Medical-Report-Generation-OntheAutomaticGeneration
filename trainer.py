@@ -13,7 +13,14 @@ from utils.models import *
 from utils.dataset import *
 from utils.loss import *
 from utils.logger_new import Logger
+from utils.build_vocab import Vocabulary
 
+class CustomUnpickler(pickle.Unpickler):
+    def find_class(self, module, name):
+        if name == 'Vocabulary':
+            from utils.build_vocab import Vocabulary
+            return Vocabulary
+        return super().find_class(module, name)
 
 class DebuggerBase:
     def __init__(self, args):
@@ -137,8 +144,9 @@ class DebuggerBase:
         return model_dir, log_dir
 
     def _init_vocab(self):
-        with open(self.args.vocab_path, 'rb') as f:
-            vocab = pickle.load(f)
+        # with open(self.args.vocab_path, 'rb') as f:
+        #     vocab = pickle.load(f)
+        vocab = CustomUnpickler(open(self.args.vocab_path, 'rb')).load()
 
         self.writer.write("Vocab Size:{}\n".format(len(vocab)))
 
@@ -555,6 +563,7 @@ class LSTMDebugger(DebuggerBase):
 
 if __name__ == '__main__':
     import warnings
+    from utils.build_vocab import Vocabulary
 
     warnings.filterwarnings("ignore")
     parser = argparse.ArgumentParser()
@@ -594,8 +603,8 @@ if __name__ == '__main__':
     """
     parser.add_argument('--momentum', type=int, default=0.1)
     # VisualFeatureExtractor
-    #resnet, clip, densenet模型种类
-    parser.add_argument('--visual_model_name', type=str, default='clip',
+    #resnet152, clip, densenet模型种类
+    parser.add_argument('--visual_model_name', type=str, default='resnet152',
                         help='CNN model name')
     parser.add_argument('--pretrained', action='store_true', default=True,
                         help='not using pretrained model when training')
