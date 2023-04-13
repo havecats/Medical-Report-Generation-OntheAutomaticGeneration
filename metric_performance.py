@@ -1,7 +1,9 @@
 from pycocoevalcap.eval import calculate_metrics
+import os
 import numpy as np
 import json
 import argparse
+from utils.logger_new import Logger
 
 
 def create_dataset(array):
@@ -21,17 +23,26 @@ def load_json(json_file):
     return data
 
 
+def _init_writer(self):
+    writer = open(os.path.join(self.result_path, self.metric_name), 'w')
+    return writer
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
     # parser.add_argument('--result_path', type=str,
     #                     default='./results/clean_test.json')
     parser.add_argument('--result_path', type=str,
-                        default='./result_logs/20230408-2157trainresnet152/results/debug.json')
+                        default='./result_logs/20230412-2254trainresnet152/results')
+    parser.add_argument('--caption_name', type=str,
+                        default='debug.json')
+    parser.add_argument('--metric_name', type=str,
+                        default='metric.txt')
     args = parser.parse_args()
     print(args)
 
-    test = load_json(args.result_path)
+    test = load_json(os.path.join(args.result_path, args.caption_name))
     datasetGTS = {'annotations': []}
     datasetRES = {'annotations': []}
 
@@ -56,5 +67,15 @@ if __name__ == '__main__':
             'caption': pred_sent
         })
 
+    # 生成记录指标的文件metric.txt
+    writer = _init_writer(args)
+    writer.write("{}\n".format(args))
+
     rng = range(len(test))
-    print(calculate_metrics(rng, datasetGTS, datasetRES))
+    metric = calculate_metrics(rng, datasetGTS, datasetRES)
+
+    # print(metric)
+    for i in metric.items():
+        writer.write(''.join(str(i))+'\n')
+        print(''.join(str(i)))
+    writer.close()

@@ -15,12 +15,14 @@ from utils.loss import *
 from utils.logger_new import Logger
 from utils.build_vocab import Vocabulary
 
+
 class CustomUnpickler(pickle.Unpickler):
     def find_class(self, module, name):
         if name == 'Vocabulary':
             from utils.build_vocab import Vocabulary
             return Vocabulary
         return super().find_class(module, name)
+
 
 class DebuggerBase:
     def __init__(self, args):
@@ -71,17 +73,30 @@ class DebuggerBase:
                 self.scheduler.step(train_loss)
             else:
                 self.scheduler.step(val_loss)
-            print("[{} - Epoch {}] train loss:{} - val_loss:{} - lr:{}\n".format(self._get_now(),
-                                                                               epoch_id,
-                                                                               train_loss,
-                                                                               val_loss,
-                                                                               self.optimizer.param_groups[0]['lr']))
+            # print("[{} - Epoch {}]\ttrain loss:{:.4f}\tval_loss:{:.4f}\tlr:{:.4f}\n".format(self._get_now(),
+            #                                                                                 epoch_id,
+            #                                                                                 train_loss,
+            #                                                                                 val_loss,
+            #                                                                                 self.optimizer.param_groups[
+            #                                                                                     0]['lr']))
+            # self.writer.write(
+            #     "[{} - Epoch {}]\ttrain loss:{:.4f}\tval_loss:{:.4f}\tlr:{:.4f}\n".format(self._get_now(),
+            #                                                                               epoch_id,
+            #                                                                               train_loss,
+            #                                                                               val_loss,
+            #                                                                               self.optimizer.param_groups[
+            #                                                                                   0]['lr']))
+            print("[{} - Epoch {}]\ttrain loss:{:.4f}\tlr:{:.4f}\n".format(self._get_now(),
+                                                                                            epoch_id,
+                                                                                            train_loss,
+                                                                                            self.optimizer.param_groups[
+                                                                                                0]['lr']))
             self.writer.write(
-                "[{} - Epoch {}] train loss:{} - val_loss:{} - lr:{}\n".format(self._get_now(),
-                                                                               epoch_id,
-                                                                               train_loss,
-                                                                               val_loss,
-                                                                               self.optimizer.param_groups[0]['lr']))
+                "[{} - Epoch {}]\ttrain loss:{:.4f}\tlr:{:.4f}\n".format(self._get_now(),
+                                                                                          epoch_id,
+                                                                                          train_loss,
+                                                                                          self.optimizer.param_groups[
+                                                                                              0]['lr']))
             self._save_model(epoch_id,
                              val_loss,
                              val_tag_loss,
@@ -99,7 +114,7 @@ class DebuggerBase:
                       lr=self.optimizer.param_groups[0]['lr'],
                       epoch=epoch_id)
             torch.cuda.empty_cache()
-        self.writer.close() # 新加的
+        self.writer.close()  # 新加的
 
     def _epoch_train(self):
         raise NotImplementedError
@@ -132,7 +147,7 @@ class DebuggerBase:
         if not os.path.exists(model_dir):
             os.makedirs(model_dir)
 
-        dir_name = self._get_now()+'train'+self.args.visual_model_name
+        dir_name = self._get_now() + 'train' + self.args.visual_model_name
         model_dir = os.path.join(model_dir, dir_name)
 
         log_dir = model_dir.replace('models', 'logs')
@@ -168,12 +183,19 @@ class DebuggerBase:
         model = VisualFeatureExtractor(model_name=self.args.visual_model_name,
                                        pretrained=self.args.pretrained)
 
+        # try:
+        #     model_state = torch.load(self.args.load_visual_model_path)
+        #     model.load_state_dict(model_state['model'])
+        #     self.writer.write("[Load Visual Extractor Succeed!]\n")
+        # except Exception as err:
+        #     self.writer.write("[Load Model Failed] {}\n".format(err))
         try:
-            model_state = torch.load(self.args.load_visual_model_path)
-            model.load_state_dict(model_state['model'])
+            # model_state = torch.load(self.args.load_visual_model_path)
+            model.load_state_dict(self.model_state_dict['extractor'])
             self.writer.write("[Load Visual Extractor Succeed!]\n")
         except Exception as err:
             self.writer.write("[Load Model Failed] {}\n".format(err))
+
 
         if not self.args.visual_trained:
             for i, param in enumerate(model.parameters()):
@@ -196,8 +218,11 @@ class DebuggerBase:
                     k=self.args.k)
 
         try:
-            model_state = torch.load(self.args.load_mlc_model_path)
-            model.load_state_dict(model_state['model'])
+            # model_state = torch.load(self.args.load_mlc_model_path)
+            # model.load_state_dict(model_state['model'])
+
+            # model_state = torch.load(self.args.load_mlc_model_path)
+            model.load_state_dict(self.model_state_dict['mlc'])
             self.writer.write("[Load MLC Succeed!]\n")
         except Exception as err:
             self.writer.write("[Load MLC Failed {}!]\n".format(err))
@@ -224,8 +249,11 @@ class DebuggerBase:
                             momentum=self.args.momentum)
 
         try:
-            model_state = torch.load(self.args.load_co_model_path)
-            model.load_state_dict(model_state['model'])
+            # model_state = torch.load(self.args.load_co_model_path)
+            # model.load_state_dict(model_state['model'])
+
+            # model_state = torch.load(self.args.load_co_model_path)
+            model.load_state_dict(self.model_state_dict['co_attention'])
             self.writer.write("[Load Co-attention Succeed!]\n")
         except Exception as err:
             self.writer.write("[Load Co-attention Failed {}!]\n".format(err))
@@ -315,7 +343,7 @@ class DebuggerBase:
         return str(time.strftime('%Y%m%d'))
 
     def _get_now(self):
-        return str(time.strftime('%Y%m%d-%H%M'))# 格林威治时间, time.gmtime()
+        return str(time.strftime('%Y%m%d-%H%M'))  # 格林威治时间, time.gmtime()
 
     def _init_scheduler(self):
         scheduler = ReduceLROnPlateau(self.optimizer, 'min', patience=self.args.patience, factor=0.1)
@@ -354,7 +382,7 @@ class DebuggerBase:
 
         if val_loss < self.min_val_loss:
             file_name = "val_best_loss.pth.tar"
-            save_whole_model(file_name)
+            # save_whole_model(file_name) #取消了保存val_best_loss model
             self.min_val_loss = val_loss
 
         if train_loss < self.min_train_loss:
@@ -412,7 +440,7 @@ class LSTMDebugger(DebuggerBase):
                 topic, p_stop, hidden_states, sentence_states = self.sentence_model.forward(ctx,
                                                                                             prev_hidden_states,
                                                                                             sentence_states)
-                #加上，不然是错误的，状态没法更新只会输出同样的内容。
+                # 加上，不然是错误的，状态没法更新只会输出同样的内容。
                 prev_hidden_states = hidden_states
 
                 batch_stop_loss += self.ce_criterion(p_stop.squeeze(), prob_real[:, sentence_index]).sum()
@@ -444,64 +472,70 @@ class LSTMDebugger(DebuggerBase):
             stop_loss += self.args.lambda_stop * batch_stop_loss.data
             word_loss += self.args.lambda_word * batch_word_loss.data
             loss += batch_loss.data
+            if i % 50 == 0:
+                print("\tbatch {} \ttag_loss:{:.4f}\tstop_loss:{:.4f}\tword_loss:{:.4f}\tloss:{:.4f}\n".format(i,
+                                                                                                               tag_loss,
+                                                                                                               stop_loss,
+                                                                                                               word_loss,
+                                                                                                               loss))
 
         return tag_loss, stop_loss, word_loss, loss
 
     # 初始为注释
     def _epoch_val(self):
         tag_loss, stop_loss, word_loss, loss = 0, 0, 0, 0
-        self.extractor.eval()
-        self.mlc.eval()
-        self.co_attention.eval()
-        self.sentence_model.eval()
-        self.word_model.eval()
-
-        for i, (images, _, label, captions, prob) in enumerate(self.val_data_loader):
-            batch_tag_loss, batch_stop_loss, batch_word_loss, batch_loss = 0, 0, 0, 0
-            images = self._to_var(images, requires_grad=False)
-
-            visual_features, avg_features = self.extractor.forward(images)
-            tags, semantic_features = self.mlc.forward(avg_features)
-
-            batch_tag_loss = self.mse_criterion(tags, self._to_var(label, requires_grad=False)).sum()
-
-            sentence_states = None
-            prev_hidden_states = self._to_var(torch.zeros(images.shape[0], 1, self.args.hidden_size))
-
-            context = self._to_var(torch.Tensor(captions).long(), requires_grad=False)
-            prob_real = self._to_var(torch.Tensor(prob).long(), requires_grad=False)
-
-            for sentence_index in range(captions.shape[1]):
-                ctx, v_att, a_att = self.co_attention.forward(avg_features,
-                                                              semantic_features,
-                                                              prev_hidden_states)
-
-                topic, p_stop, hidden_states, sentence_states = self.sentence_model.forward(ctx,
-                                                                                            prev_hidden_states,
-                                                                                            sentence_states)
-                # print("p_stop:{}".format(p_stop.squeeze()))
-                # print("prob_real:{}".format(prob_real[:, sentence_index]))
-
-                prev_hidden_states = hidden_states
-
-                batch_stop_loss += self.ce_criterion(p_stop.squeeze(), prob_real[:, sentence_index].squeeze()).sum()
-
-                for word_index in range(1, captions.shape[2]):
-                    words = self.word_model.forward(topic, context[:, sentence_index, :word_index])
-                    word_mask = (context[:, sentence_index, word_index] > 0).float()
-                    batch_word_loss += (self.ce_criterion(words, context[:, sentence_index, word_index])
-                                        * word_mask).sum()
-                    # print("words:{}".format(torch.max(words, 1)[1]))
-                    # print("real:{}".format(context[:, sentence_index, word_index]))
-
-            batch_loss = self.args.lambda_tag * batch_tag_loss \
-                         + self.args.lambda_stop * batch_stop_loss \
-                         + self.args.lambda_word * batch_word_loss
-
-            tag_loss += self.args.lambda_tag * batch_tag_loss.data
-            stop_loss += self.args.lambda_stop * batch_stop_loss.data
-            word_loss += self.args.lambda_word * batch_word_loss.data
-            loss += batch_loss.data
+        # self.extractor.eval()
+        # self.mlc.eval()
+        # self.co_attention.eval()
+        # self.sentence_model.eval()
+        # self.word_model.eval()
+        #
+        # for i, (images, _, label, captions, prob) in enumerate(self.val_data_loader):
+        #     batch_tag_loss, batch_stop_loss, batch_word_loss, batch_loss = 0, 0, 0, 0
+        #     images = self._to_var(images, requires_grad=False)
+        #
+        #     visual_features, avg_features = self.extractor.forward(images)
+        #     tags, semantic_features = self.mlc.forward(avg_features)
+        #
+        #     batch_tag_loss = self.mse_criterion(tags, self._to_var(label, requires_grad=False)).sum()
+        #
+        #     sentence_states = None
+        #     prev_hidden_states = self._to_var(torch.zeros(images.shape[0], 1, self.args.hidden_size))
+        #
+        #     context = self._to_var(torch.Tensor(captions).long(), requires_grad=False)
+        #     prob_real = self._to_var(torch.Tensor(prob).long(), requires_grad=False)
+        #
+        #     for sentence_index in range(captions.shape[1]):
+        #         ctx, v_att, a_att = self.co_attention.forward(avg_features,
+        #                                                       semantic_features,
+        #                                                       prev_hidden_states)
+        #
+        #         topic, p_stop, hidden_states, sentence_states = self.sentence_model.forward(ctx,
+        #                                                                                     prev_hidden_states,
+        #                                                                                     sentence_states)
+        #         # print("p_stop:{}".format(p_stop.squeeze()))
+        #         # print("prob_real:{}".format(prob_real[:, sentence_index]))
+        #
+        #         prev_hidden_states = hidden_states
+        #
+        #         batch_stop_loss += self.ce_criterion(p_stop.squeeze(), prob_real[:, sentence_index].squeeze()).sum()
+        #
+        #         for word_index in range(1, captions.shape[2]):
+        #             words = self.word_model.forward(topic, context[:, sentence_index, :word_index])
+        #             word_mask = (context[:, sentence_index, word_index] > 0).float()
+        #             batch_word_loss += (self.ce_criterion(words, context[:, sentence_index, word_index])
+        #                                 * word_mask).sum()
+        #             # print("words:{}".format(torch.max(words, 1)[1]))
+        #             # print("real:{}".format(context[:, sentence_index, word_index]))
+        #
+        #     batch_loss = self.args.lambda_tag * batch_tag_loss \
+        #                  + self.args.lambda_stop * batch_stop_loss \
+        #                  + self.args.lambda_word * batch_word_loss
+        #
+        #     tag_loss += self.args.lambda_tag * batch_tag_loss.data
+        #     stop_loss += self.args.lambda_stop * batch_stop_loss.data
+        #     word_loss += self.args.lambda_word * batch_word_loss.data
+        #     loss += batch_loss.data
 
         return tag_loss, stop_loss, word_loss, loss
 
@@ -514,8 +548,11 @@ class LSTMDebugger(DebuggerBase):
                              momentum=self.args.momentum)
 
         try:
-            model_state = torch.load(self.args.load_sentence_model_path)
-            model.load_state_dict(model_state['model'])
+            # model_state = torch.load(self.args.load_sentence_model_path)
+            # model.load_state_dict(model_state['model'])
+
+            # model_state = torch.load(self.args.load_sentence_model_path)
+            model.load_state_dict(self.model_state_dict['sentence_model'])
             self.writer.write("[Load Sentence Model Succeed!\n")
         except Exception as err:
             self.writer.write("[Load Sentence model Failed {}!]\n".format(err))
@@ -541,8 +578,11 @@ class LSTMDebugger(DebuggerBase):
                          n_max=self.args.n_max)
 
         try:
-            model_state = torch.load(self.args.load_word_model_path)
-            model.load_state_dict(model_state['model'])
+            # model_state = torch.load(self.args.load_word_model_path)
+            # model.load_state_dict(model_state['model'])
+
+            # model_state = torch.load(self.args.load_word_model_path)
+            model.load_state_dict(self.model_state_dict['word_model'])
             self.writer.write("[Load Word Model Succeed!\n")
         except Exception as err:
             self.writer.write("[Load Word model Failed {}!]\n".format(err))
@@ -593,7 +633,9 @@ if __name__ == '__main__':
     # Load/Save model argument
     parser.add_argument('--model_path', type=str, default='./result_models/',
                         help='path for saving trained models')
-    parser.add_argument('--load_model_path', type=str, default='',
+    # !!!!!!!!!!!!!!!!!!!!!!!
+    parser.add_argument('--load_model_path', type=str,
+                        default='./result_models/20230412-2254trainresnet152/train_best_loss.pth.tar',  # 选择导入已有的model
                         help='The path of loaded model')
     # parser.add_argument('--saved_model_name', type=str, default='v4',
     #                     help='The name of saved model')
@@ -603,7 +645,7 @@ if __name__ == '__main__':
     """
     parser.add_argument('--momentum', type=int, default=0.1)
     # VisualFeatureExtractor
-    #resnet152, clip, densenet模型种类
+    # resnet152, clip, densenet模型种类
     parser.add_argument('--visual_model_name', type=str, default='resnet152',
                         help='CNN model name')
     parser.add_argument('--pretrained', action='store_true', default=True,
@@ -645,9 +687,9 @@ if __name__ == '__main__':
     """
     Training Argument
     """
-    parser.add_argument('--batch_size', type=int, default=16) #修改了batch_size, 原本为16
+    parser.add_argument('--batch_size', type=int, default=16)  # 修改了batch_size, 原本为16
     parser.add_argument('--learning_rate', type=int, default=0.001)
-    parser.add_argument('--epochs', type=int, default=50)
+    parser.add_argument('--epochs', type=int, default=300)  # 修改epoch
 
     parser.add_argument('--clip', type=float, default=-1,
                         help='gradient clip, -1 means no clip (default: 0.35)')
