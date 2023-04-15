@@ -407,7 +407,7 @@ if __name__ == '__main__':
     #                     help='The path of loaded model')
 
     #train中的resnet模型
-    parser.add_argument('--model_dir', type=str, default='./result_models/20230412-2254trainresnet152')
+    parser.add_argument('--model_dir', type=str, default='./result_models/20230415-0050trainresnet152')
     parser.add_argument('--caption_json', type=str, default='./data/new_data/captions.json',
                         help='path for captions')
     parser.add_argument('--vocab_path', type=str, default='./data/new_data/vocab.pkl',

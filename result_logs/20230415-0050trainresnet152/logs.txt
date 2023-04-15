@@ -1,0 +1,386 @@
+Vocab Size:1173
+[Load Model-./result_models/20230414-0216trainresnet152/train_best_loss.pth.tar Succeed!]
+Load From Epoch 292
+[Load Visual Extractor Succeed!]
+[Load MLC Succeed!]
+[Load Co-attention Succeed!]
+[Load Sentence Model Succeed!
+[Load Word Model Succeed!
+Namespace(patience=20, mode='train', vocab_path='./data/new_data/vocab.pkl', image_dir='./data/images', caption_json='./data/new_data/captions.json', train_file_list='./data/new_data/train_data.txt', val_file_list='./data/new_data/val_data.txt', resize=256, crop_size=224, model_path='./result_models/', load_model_path='./result_models/20230414-0216trainresnet152/train_best_loss.pth.tar', momentum=0.1, visual_model_name='resnet152', pretrained=True, load_visual_model_path='.', visual_trained=True, classes=210, sementic_features_dim=512, k=10, load_mlc_model_path='.', mlc_trained=True, attention_version='v4', embed_size=512, hidden_size=512, load_co_model_path='.', co_trained=True, sent_version='v1', sentence_num_layers=2, dropout=0, load_sentence_model_path='.', sentence_trained=True, word_num_layers=1, load_word_model_path='.', word_trained=True, batch_size=16, learning_rate=0.0001, epochs=600, clip=-1, s_max=6, n_max=30, lambda_tag=10000, lambda_stop=10, lambda_word=1, cuda=True)
+[20230415-0053 - Epoch 292]	train loss:279438.1250	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0056 - Epoch 293]	train loss:279466.0312	lr:0.0001
+[20230415-0059 - Epoch 294]	train loss:279746.9688	lr:0.0001
+[20230415-0102 - Epoch 295]	train loss:279609.1562	lr:0.0001
+[20230415-0104 - Epoch 296]	train loss:279079.1250	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0107 - Epoch 297]	train loss:279743.5312	lr:0.0001
+[20230415-0110 - Epoch 298]	train loss:279581.5938	lr:0.0001
+[20230415-0113 - Epoch 299]	train loss:279352.4375	lr:0.0001
+[20230415-0116 - Epoch 300]	train loss:279134.3438	lr:0.0001
+[20230415-0119 - Epoch 301]	train loss:279417.7500	lr:0.0001
+[20230415-0122 - Epoch 302]	train loss:279551.0000	lr:0.0001
+[20230415-0125 - Epoch 303]	train loss:278799.2500	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0127 - Epoch 304]	train loss:278532.8750	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0130 - Epoch 305]	train loss:279015.0625	lr:0.0001
+[20230415-0133 - Epoch 306]	train loss:279669.5000	lr:0.0001
+[20230415-0136 - Epoch 307]	train loss:278974.4062	lr:0.0001
+[20230415-0139 - Epoch 308]	train loss:278664.3438	lr:0.0001
+[20230415-0142 - Epoch 309]	train loss:278679.7188	lr:0.0001
+[20230415-0145 - Epoch 310]	train loss:278941.6562	lr:0.0001
+[20230415-0147 - Epoch 311]	train loss:278851.5312	lr:0.0001
+[20230415-0150 - Epoch 312]	train loss:278864.9062	lr:0.0001
+[20230415-0153 - Epoch 313]	train loss:278674.4375	lr:0.0001
+[20230415-0156 - Epoch 314]	train loss:278570.1875	lr:0.0001
+[20230415-0159 - Epoch 315]	train loss:278159.5000	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0202 - Epoch 316]	train loss:278813.3438	lr:0.0001
+[20230415-0204 - Epoch 317]	train loss:278388.2188	lr:0.0001
+[20230415-0207 - Epoch 318]	train loss:278145.9062	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0210 - Epoch 319]	train loss:279267.6875	lr:0.0001
+[20230415-0213 - Epoch 320]	train loss:278524.7500	lr:0.0001
+[20230415-0216 - Epoch 321]	train loss:278623.5938	lr:0.0001
+[20230415-0219 - Epoch 322]	train loss:278328.8438	lr:0.0001
+[20230415-0222 - Epoch 323]	train loss:278132.7188	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0224 - Epoch 324]	train loss:277923.2188	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0227 - Epoch 325]	train loss:278993.7500	lr:0.0001
+[20230415-0230 - Epoch 326]	train loss:277623.3750	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0233 - Epoch 327]	train loss:278324.9375	lr:0.0001
+[20230415-0236 - Epoch 328]	train loss:278673.7188	lr:0.0001
+[20230415-0239 - Epoch 329]	train loss:277954.6562	lr:0.0001
+[20230415-0241 - Epoch 330]	train loss:279022.1562	lr:0.0001
+[20230415-0244 - Epoch 331]	train loss:277980.0312	lr:0.0001
+[20230415-0247 - Epoch 332]	train loss:278147.4688	lr:0.0001
+[20230415-0250 - Epoch 333]	train loss:278260.3750	lr:0.0001
+[20230415-0253 - Epoch 334]	train loss:277542.5625	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0256 - Epoch 335]	train loss:277374.0938	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0259 - Epoch 336]	train loss:277451.0000	lr:0.0001
+[20230415-0302 - Epoch 337]	train loss:278410.7188	lr:0.0001
+[20230415-0304 - Epoch 338]	train loss:277875.0312	lr:0.0001
+[20230415-0307 - Epoch 339]	train loss:278037.1562	lr:0.0001
+[20230415-0310 - Epoch 340]	train loss:278035.8125	lr:0.0001
+[20230415-0313 - Epoch 341]	train loss:277616.2500	lr:0.0001
+[20230415-0316 - Epoch 342]	train loss:277593.9688	lr:0.0001
+[20230415-0319 - Epoch 343]	train loss:277714.1875	lr:0.0001
+[20230415-0322 - Epoch 344]	train loss:277114.7812	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0325 - Epoch 345]	train loss:277249.7188	lr:0.0001
+[20230415-0328 - Epoch 346]	train loss:277811.0000	lr:0.0001
+[20230415-0330 - Epoch 347]	train loss:277296.5625	lr:0.0001
+[20230415-0333 - Epoch 348]	train loss:277683.6250	lr:0.0001
+[20230415-0336 - Epoch 349]	train loss:276730.5312	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0339 - Epoch 350]	train loss:276795.5938	lr:0.0001
+[20230415-0342 - Epoch 351]	train loss:277225.2812	lr:0.0001
+[20230415-0345 - Epoch 352]	train loss:277828.4375	lr:0.0001
+[20230415-0348 - Epoch 353]	train loss:277134.7188	lr:0.0001
+[20230415-0351 - Epoch 354]	train loss:277327.7188	lr:0.0001
+[20230415-0354 - Epoch 355]	train loss:277555.9375	lr:0.0001
+[20230415-0356 - Epoch 356]	train loss:276669.9688	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0359 - Epoch 357]	train loss:277604.6875	lr:0.0001
+[20230415-0402 - Epoch 358]	train loss:277282.5312	lr:0.0001
+[20230415-0405 - Epoch 359]	train loss:276341.1875	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0408 - Epoch 360]	train loss:277060.0312	lr:0.0001
+[20230415-0411 - Epoch 361]	train loss:276910.2500	lr:0.0001
+[20230415-0414 - Epoch 362]	train loss:276650.7500	lr:0.0001
+[20230415-0417 - Epoch 363]	train loss:276809.8438	lr:0.0001
+[20230415-0420 - Epoch 364]	train loss:276315.0312	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0422 - Epoch 365]	train loss:276439.2188	lr:0.0001
+[20230415-0425 - Epoch 366]	train loss:276529.7500	lr:0.0001
+[20230415-0428 - Epoch 367]	train loss:275882.8750	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0431 - Epoch 368]	train loss:276263.4688	lr:0.0001
+[20230415-0434 - Epoch 369]	train loss:276696.3438	lr:0.0001
+[20230415-0437 - Epoch 370]	train loss:275374.5938	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0440 - Epoch 371]	train loss:276762.7500	lr:0.0001
+[20230415-0443 - Epoch 372]	train loss:276226.5312	lr:0.0001
+[20230415-0446 - Epoch 373]	train loss:275240.5938	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0448 - Epoch 374]	train loss:275530.8750	lr:0.0001
+[20230415-0451 - Epoch 375]	train loss:275993.4688	lr:0.0001
+[20230415-0454 - Epoch 376]	train loss:276187.7812	lr:0.0001
+[20230415-0457 - Epoch 377]	train loss:275991.5000	lr:0.0001
+[20230415-0500 - Epoch 378]	train loss:276132.4688	lr:0.0001
+[20230415-0503 - Epoch 379]	train loss:275639.5938	lr:0.0001
+[20230415-0506 - Epoch 380]	train loss:276544.6250	lr:0.0001
+[20230415-0508 - Epoch 381]	train loss:275815.9375	lr:0.0001
+[20230415-0511 - Epoch 382]	train loss:275437.5625	lr:0.0001
+[20230415-0514 - Epoch 383]	train loss:276261.0938	lr:0.0001
+[20230415-0517 - Epoch 384]	train loss:276189.5312	lr:0.0001
+[20230415-0520 - Epoch 385]	train loss:276273.5625	lr:0.0001
+[20230415-0523 - Epoch 386]	train loss:276016.5938	lr:0.0001
+[20230415-0525 - Epoch 387]	train loss:276043.3438	lr:0.0001
+[20230415-0528 - Epoch 388]	train loss:275903.8125	lr:0.0001
+[20230415-0531 - Epoch 389]	train loss:276029.8125	lr:0.0001
+[20230415-0534 - Epoch 390]	train loss:275625.5625	lr:0.0001
+[20230415-0537 - Epoch 391]	train loss:275726.3750	lr:0.0001
+[20230415-0540 - Epoch 392]	train loss:275390.3125	lr:0.0001
+[20230415-0542 - Epoch 393]	train loss:275264.5312	lr:0.0001
+[20230415-0545 - Epoch 394]	train loss:275015.8438	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0548 - Epoch 395]	train loss:274728.2188	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0551 - Epoch 396]	train loss:274803.5625	lr:0.0001
+[20230415-0554 - Epoch 397]	train loss:275696.2500	lr:0.0001
+[20230415-0557 - Epoch 398]	train loss:274666.1250	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0600 - Epoch 399]	train loss:274282.5312	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0603 - Epoch 400]	train loss:274746.1562	lr:0.0001
+[20230415-0606 - Epoch 401]	train loss:274726.7500	lr:0.0001
+[20230415-0608 - Epoch 402]	train loss:274383.5625	lr:0.0001
+[20230415-0611 - Epoch 403]	train loss:274489.4375	lr:0.0001
+[20230415-0614 - Epoch 404]	train loss:274707.2188	lr:0.0001
+[20230415-0617 - Epoch 405]	train loss:274750.9688	lr:0.0001
+[20230415-0620 - Epoch 406]	train loss:274204.6250	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0623 - Epoch 407]	train loss:273612.6250	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0626 - Epoch 408]	train loss:274065.2812	lr:0.0001
+[20230415-0629 - Epoch 409]	train loss:274383.5312	lr:0.0001
+[20230415-0632 - Epoch 410]	train loss:274499.6250	lr:0.0001
+[20230415-0634 - Epoch 411]	train loss:274128.9375	lr:0.0001
+[20230415-0637 - Epoch 412]	train loss:273619.3125	lr:0.0001
+[20230415-0640 - Epoch 413]	train loss:273648.0312	lr:0.0001
+[20230415-0643 - Epoch 414]	train loss:273877.5312	lr:0.0001
+[20230415-0646 - Epoch 415]	train loss:274777.6562	lr:0.0001
+[20230415-0649 - Epoch 416]	train loss:274120.4375	lr:0.0001
+[20230415-0652 - Epoch 417]	train loss:273723.8750	lr:0.0001
+[20230415-0654 - Epoch 418]	train loss:273687.9062	lr:0.0001
+[20230415-0657 - Epoch 419]	train loss:274726.5312	lr:0.0001
+[20230415-0700 - Epoch 420]	train loss:274291.8125	lr:0.0001
+[20230415-0703 - Epoch 421]	train loss:273693.4688	lr:0.0001
+[20230415-0706 - Epoch 422]	train loss:273770.5000	lr:0.0001
+[20230415-0709 - Epoch 423]	train loss:274068.2188	lr:0.0001
+[20230415-0711 - Epoch 424]	train loss:273904.7812	lr:0.0001
+[20230415-0714 - Epoch 425]	train loss:273942.2812	lr:0.0001
+[20230415-0717 - Epoch 426]	train loss:272967.0625	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0720 - Epoch 427]	train loss:273107.7188	lr:0.0001
+[20230415-0723 - Epoch 428]	train loss:273192.3125	lr:0.0001
+[20230415-0726 - Epoch 429]	train loss:273167.8750	lr:0.0001
+[20230415-0728 - Epoch 430]	train loss:273590.3438	lr:0.0001
+[20230415-0731 - Epoch 431]	train loss:272748.8125	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0734 - Epoch 432]	train loss:273158.4375	lr:0.0001
+[20230415-0737 - Epoch 433]	train loss:272892.4688	lr:0.0001
+[20230415-0740 - Epoch 434]	train loss:272582.1250	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0743 - Epoch 435]	train loss:272257.0938	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0746 - Epoch 436]	train loss:273129.2500	lr:0.0001
+[20230415-0748 - Epoch 437]	train loss:271971.9688	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0751 - Epoch 438]	train loss:271512.5000	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0754 - Epoch 439]	train loss:272812.7812	lr:0.0001
+[20230415-0757 - Epoch 440]	train loss:272702.9688	lr:0.0001
+[20230415-0800 - Epoch 441]	train loss:272039.2188	lr:0.0001
+[20230415-0803 - Epoch 442]	train loss:272410.6562	lr:0.0001
+[20230415-0806 - Epoch 443]	train loss:273025.7500	lr:0.0001
+[20230415-0809 - Epoch 444]	train loss:272342.6875	lr:0.0001
+[20230415-0811 - Epoch 445]	train loss:273108.8750	lr:0.0001
+[20230415-0814 - Epoch 446]	train loss:271690.3438	lr:0.0001
+[20230415-0817 - Epoch 447]	train loss:271946.1250	lr:0.0001
+[20230415-0820 - Epoch 448]	train loss:271233.7500	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0823 - Epoch 449]	train loss:271990.3125	lr:0.0001
+[20230415-0826 - Epoch 450]	train loss:272337.7812	lr:0.0001
+[20230415-0829 - Epoch 451]	train loss:271704.5312	lr:0.0001
+[20230415-0832 - Epoch 452]	train loss:272315.2500	lr:0.0001
+[20230415-0834 - Epoch 453]	train loss:271574.2188	lr:0.0001
+[20230415-0837 - Epoch 454]	train loss:271158.3438	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0840 - Epoch 455]	train loss:271255.3438	lr:0.0001
+[20230415-0843 - Epoch 456]	train loss:271464.8750	lr:0.0001
+[20230415-0846 - Epoch 457]	train loss:270946.6250	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0849 - Epoch 458]	train loss:271724.1875	lr:0.0001
+[20230415-0852 - Epoch 459]	train loss:270931.9062	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0855 - Epoch 460]	train loss:270823.4062	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0857 - Epoch 461]	train loss:271151.3438	lr:0.0001
+[20230415-0900 - Epoch 462]	train loss:271208.3438	lr:0.0001
+[20230415-0903 - Epoch 463]	train loss:270858.6875	lr:0.0001
+[20230415-0906 - Epoch 464]	train loss:270166.1562	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0909 - Epoch 465]	train loss:271136.3438	lr:0.0001
+[20230415-0912 - Epoch 466]	train loss:270575.7812	lr:0.0001
+[20230415-0914 - Epoch 467]	train loss:270924.1875	lr:0.0001
+[20230415-0917 - Epoch 468]	train loss:270402.5938	lr:0.0001
+[20230415-0920 - Epoch 469]	train loss:270203.6562	lr:0.0001
+[20230415-0923 - Epoch 470]	train loss:270936.4688	lr:0.0001
+[20230415-0926 - Epoch 471]	train loss:270203.6250	lr:0.0001
+[20230415-0929 - Epoch 472]	train loss:270346.8438	lr:0.0001
+[20230415-0931 - Epoch 473]	train loss:271570.5312	lr:0.0001
+[20230415-0934 - Epoch 474]	train loss:270332.5000	lr:0.0001
+[20230415-0937 - Epoch 475]	train loss:269089.4688	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0940 - Epoch 476]	train loss:270173.8750	lr:0.0001
+[20230415-0943 - Epoch 477]	train loss:269529.9375	lr:0.0001
+[20230415-0946 - Epoch 478]	train loss:268815.3750	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-0949 - Epoch 479]	train loss:269871.8438	lr:0.0001
+[20230415-0951 - Epoch 480]	train loss:269461.6250	lr:0.0001
+[20230415-0954 - Epoch 481]	train loss:269363.0938	lr:0.0001
+[20230415-0957 - Epoch 482]	train loss:269361.2812	lr:0.0001
+[20230415-1000 - Epoch 483]	train loss:269140.9375	lr:0.0001
+[20230415-1003 - Epoch 484]	train loss:268898.1875	lr:0.0001
+[20230415-1006 - Epoch 485]	train loss:268675.5000	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1009 - Epoch 486]	train loss:268141.2812	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1011 - Epoch 487]	train loss:269364.5000	lr:0.0001
+[20230415-1014 - Epoch 488]	train loss:268953.0000	lr:0.0001
+[20230415-1017 - Epoch 489]	train loss:267894.7188	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1020 - Epoch 490]	train loss:268668.4688	lr:0.0001
+[20230415-1023 - Epoch 491]	train loss:269504.5312	lr:0.0001
+[20230415-1026 - Epoch 492]	train loss:268849.0938	lr:0.0001
+[20230415-1028 - Epoch 493]	train loss:268639.8750	lr:0.0001
+[20230415-1031 - Epoch 494]	train loss:267359.2188	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1034 - Epoch 495]	train loss:268841.8438	lr:0.0001
+[20230415-1037 - Epoch 496]	train loss:268734.5625	lr:0.0001
+[20230415-1040 - Epoch 497]	train loss:267960.9375	lr:0.0001
+[20230415-1043 - Epoch 498]	train loss:268026.5938	lr:0.0001
+[20230415-1046 - Epoch 499]	train loss:267239.0000	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1048 - Epoch 500]	train loss:267883.4688	lr:0.0001
+[20230415-1051 - Epoch 501]	train loss:268054.6875	lr:0.0001
+[20230415-1054 - Epoch 502]	train loss:268379.9062	lr:0.0001
+[20230415-1057 - Epoch 503]	train loss:266812.5312	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1100 - Epoch 504]	train loss:267405.7500	lr:0.0001
+[20230415-1103 - Epoch 505]	train loss:267143.8125	lr:0.0001
+[20230415-1105 - Epoch 506]	train loss:267576.4062	lr:0.0001
+[20230415-1108 - Epoch 507]	train loss:267145.5000	lr:0.0001
+[20230415-1111 - Epoch 508]	train loss:268003.3750	lr:0.0001
+[20230415-1114 - Epoch 509]	train loss:267183.2812	lr:0.0001
+[20230415-1117 - Epoch 510]	train loss:267330.3750	lr:0.0001
+[20230415-1120 - Epoch 511]	train loss:266294.0000	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1122 - Epoch 512]	train loss:266734.5312	lr:0.0001
+[20230415-1125 - Epoch 513]	train loss:266492.8750	lr:0.0001
+[20230415-1128 - Epoch 514]	train loss:266225.2500	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1131 - Epoch 515]	train loss:266703.0312	lr:0.0001
+[20230415-1134 - Epoch 516]	train loss:265724.9375	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1137 - Epoch 517]	train loss:266790.6562	lr:0.0001
+[20230415-1140 - Epoch 518]	train loss:266489.6562	lr:0.0001
+[20230415-1143 - Epoch 519]	train loss:265884.7500	lr:0.0001
+[20230415-1146 - Epoch 520]	train loss:266091.7188	lr:0.0001
+[20230415-1149 - Epoch 521]	train loss:265837.2188	lr:0.0001
+[20230415-1151 - Epoch 522]	train loss:265125.6875	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1154 - Epoch 523]	train loss:265121.9062	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1157 - Epoch 524]	train loss:264805.1250	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1200 - Epoch 525]	train loss:265974.6562	lr:0.0001
+[20230415-1203 - Epoch 526]	train loss:264554.5938	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1206 - Epoch 527]	train loss:265004.0625	lr:0.0001
+[20230415-1209 - Epoch 528]	train loss:265083.2500	lr:0.0001
+[20230415-1211 - Epoch 529]	train loss:264337.4688	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1214 - Epoch 530]	train loss:265108.5312	lr:0.0001
+[20230415-1217 - Epoch 531]	train loss:265269.0312	lr:0.0001
+[20230415-1220 - Epoch 532]	train loss:264704.8438	lr:0.0001
+[20230415-1223 - Epoch 533]	train loss:265026.9062	lr:0.0001
+[20230415-1226 - Epoch 534]	train loss:263557.2188	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1229 - Epoch 535]	train loss:265109.0938	lr:0.0001
+[20230415-1231 - Epoch 536]	train loss:263796.3750	lr:0.0001
+[20230415-1234 - Epoch 537]	train loss:264106.3750	lr:0.0001
+[20230415-1237 - Epoch 538]	train loss:264409.0625	lr:0.0001
+[20230415-1240 - Epoch 539]	train loss:264542.5000	lr:0.0001
+[20230415-1243 - Epoch 540]	train loss:264500.9375	lr:0.0001
+[20230415-1246 - Epoch 541]	train loss:263994.0625	lr:0.0001
+[20230415-1248 - Epoch 542]	train loss:263929.9062	lr:0.0001
+[20230415-1251 - Epoch 543]	train loss:263448.8125	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1254 - Epoch 544]	train loss:264006.5000	lr:0.0001
+[20230415-1257 - Epoch 545]	train loss:263426.3438	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1300 - Epoch 546]	train loss:263527.2812	lr:0.0001
+[20230415-1303 - Epoch 547]	train loss:263641.5312	lr:0.0001
+[20230415-1306 - Epoch 548]	train loss:261900.6719	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1309 - Epoch 549]	train loss:263429.6875	lr:0.0001
+[20230415-1311 - Epoch 550]	train loss:263493.5938	lr:0.0001
+[20230415-1314 - Epoch 551]	train loss:263081.7188	lr:0.0001
+[20230415-1317 - Epoch 552]	train loss:263924.3125	lr:0.0001
+[20230415-1320 - Epoch 553]	train loss:263144.0000	lr:0.0001
+[20230415-1323 - Epoch 554]	train loss:262396.5938	lr:0.0001
+[20230415-1326 - Epoch 555]	train loss:262889.2500	lr:0.0001
+[20230415-1328 - Epoch 556]	train loss:262036.6094	lr:0.0001
+[20230415-1331 - Epoch 557]	train loss:262614.0625	lr:0.0001
+[20230415-1334 - Epoch 558]	train loss:261762.7188	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1337 - Epoch 559]	train loss:261020.7500	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1340 - Epoch 560]	train loss:262145.5312	lr:0.0001
+[20230415-1343 - Epoch 561]	train loss:260510.7188	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1346 - Epoch 562]	train loss:262093.6094	lr:0.0001
+[20230415-1348 - Epoch 563]	train loss:260591.6094	lr:0.0001
+[20230415-1351 - Epoch 564]	train loss:261316.7656	lr:0.0001
+[20230415-1354 - Epoch 565]	train loss:260112.5000	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1357 - Epoch 566]	train loss:260625.0625	lr:0.0001
+[20230415-1400 - Epoch 567]	train loss:260489.6562	lr:0.0001
+[20230415-1403 - Epoch 568]	train loss:260728.7656	lr:0.0001
+[20230415-1405 - Epoch 569]	train loss:259905.4531	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1408 - Epoch 570]	train loss:261684.7656	lr:0.0001
+[20230415-1411 - Epoch 571]	train loss:262884.2188	lr:0.0001
+[20230415-1414 - Epoch 572]	train loss:260307.0938	lr:0.0001
+[20230415-1417 - Epoch 573]	train loss:259442.5156	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1420 - Epoch 574]	train loss:259097.7344	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1423 - Epoch 575]	train loss:259668.1250	lr:0.0001
+[20230415-1426 - Epoch 576]	train loss:259548.3125	lr:0.0001
+[20230415-1429 - Epoch 577]	train loss:260450.5781	lr:0.0001
+[20230415-1431 - Epoch 578]	train loss:259695.8750	lr:0.0001
+[20230415-1434 - Epoch 579]	train loss:259714.0312	lr:0.0001
+[20230415-1437 - Epoch 580]	train loss:260056.6562	lr:0.0001
+[20230415-1440 - Epoch 581]	train loss:259663.4688	lr:0.0001
+[20230415-1443 - Epoch 582]	train loss:258678.5469	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1446 - Epoch 583]	train loss:259378.8281	lr:0.0001
+[20230415-1449 - Epoch 584]	train loss:259450.9844	lr:0.0001
+[20230415-1452 - Epoch 585]	train loss:259465.1875	lr:0.0001
+[20230415-1455 - Epoch 586]	train loss:259479.0469	lr:0.0001
+[20230415-1457 - Epoch 587]	train loss:258320.7656	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1500 - Epoch 588]	train loss:258670.4844	lr:0.0001
+[20230415-1503 - Epoch 589]	train loss:258451.5000	lr:0.0001
+[20230415-1506 - Epoch 590]	train loss:257833.5938	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1509 - Epoch 591]	train loss:258768.9844	lr:0.0001
+[20230415-1512 - Epoch 592]	train loss:258095.1875	lr:0.0001
+[20230415-1514 - Epoch 593]	train loss:257146.2969	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1517 - Epoch 594]	train loss:257813.9062	lr:0.0001
+[20230415-1520 - Epoch 595]	train loss:257587.9531	lr:0.0001
+[20230415-1523 - Epoch 596]	train loss:257562.5000	lr:0.0001
+[20230415-1526 - Epoch 597]	train loss:257314.5000	lr:0.0001
+[20230415-1529 - Epoch 598]	train loss:256369.0781	lr:0.0001
+Saved Model in train_best_loss.pth.tar
+[20230415-1531 - Epoch 599]	train loss:258997.2031	lr:0.0001

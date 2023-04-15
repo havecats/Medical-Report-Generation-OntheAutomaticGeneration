@@ -346,7 +346,7 @@ class DebuggerBase:
         return str(time.strftime('%Y%m%d-%H%M'))  # 格林威治时间, time.gmtime()
 
     def _init_scheduler(self):
-        scheduler = ReduceLROnPlateau(self.optimizer, 'min', patience=self.args.patience, factor=0.1)
+        scheduler = ReduceLROnPlateau(self.optimizer, 'min', patience=self.args.patience, factor=0.5)
         return scheduler
 
     def _init_model_path(self):
@@ -611,7 +611,7 @@ if __name__ == '__main__':
     """
     Data Argument
     """
-    parser.add_argument('--patience', type=int, default=50)
+    parser.add_argument('--patience', type=int, default=20)
     parser.add_argument('--mode', type=str, default='train')
 
     # Path Argument
@@ -635,7 +635,7 @@ if __name__ == '__main__':
                         help='path for saving trained models')
     # !!!!!!!!!!!!!!!!!!!!!!!
     parser.add_argument('--load_model_path', type=str,
-                        default='./result_models/20230412-2254trainresnet152/train_best_loss.pth.tar',  # 选择导入已有的model
+                        default='./result_models/20230415-0050trainresnet152/train_best_loss.pth.tar',  # 选择导入已有的model
                         help='The path of loaded model')
     # parser.add_argument('--saved_model_name', type=str, default='v4',
     #                     help='The name of saved model')
@@ -688,8 +688,8 @@ if __name__ == '__main__':
     Training Argument
     """
     parser.add_argument('--batch_size', type=int, default=16)  # 修改了batch_size, 原本为16
-    parser.add_argument('--learning_rate', type=int, default=0.001)
-    parser.add_argument('--epochs', type=int, default=300)  # 修改epoch
+    parser.add_argument('--learning_rate', type=int, default=0.0001) #由于在几百个epoch的基础上继续训练，采用的0.0001，原本为0.001
+    parser.add_argument('--epochs', type=int, default=800)  # 修改epoch
 
     parser.add_argument('--clip', type=float, default=-1,
                         help='gradient clip, -1 means no clip (default: 0.35)')

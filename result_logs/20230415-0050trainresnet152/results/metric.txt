@@ -1,0 +1,8 @@
+Namespace(result_path='./result_logs/20230415-0050trainresnet152/results', caption_name='debug.json', metric_name='metric.txt')
+('Bleu_1', 0.3827035655269525)
+('Bleu_2', 0.3158231232603393)
+('Bleu_3', 0.25477651454426253)
+('Bleu_4', 0.2155816693629932)
+('METEOR', 0.2234034900720763)
+('ROUGE_L', 0.4526743410937213)
+('CIDEr', 0.06019576828635627)
