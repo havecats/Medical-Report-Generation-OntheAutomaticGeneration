@@ -101,7 +101,7 @@ class CaptionSampler(object):
         # self.sentence_model.eval()
         # self.word_model.eval()
 
-        progress_bar = tqdm(self.data_loader, desc='Generating')
+        progress_bar = tqdm(self.data_loader, desc='Generating  /batch ')
         results = {}
 
         for images, image_id, label, captions, _ in progress_bar:

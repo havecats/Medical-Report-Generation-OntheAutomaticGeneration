@@ -1,4 +1,4 @@
-Namespace(result_path='./result_logs/20230414-0216trainresnet152/results', caption_name='debug.json', metric_name='metric.txt')
+Namespace(result_path='./result_logs/20230415-0050trainresnet152/20230414-0216trainresnet152/results', caption_name='debug.json', metric_name='metric.txt')
 ('Bleu_1', 0.6415409766415527)
 ('Bleu_2', 0.5168435657584263)
 ('Bleu_3', 0.4149360345005168)
