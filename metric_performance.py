@@ -34,7 +34,7 @@ if __name__ == '__main__':
     # parser.add_argument('--result_path', type=str,
     #                     default='./results/clean_test.json')
     parser.add_argument('--result_path', type=str,
-                        default='./result_logs/20230415-0050trainresnet152/20230414-0216trainresnet152/results')
+                        default='./result_logs/20230415-2238trainresnet152/results')
     parser.add_argument('--caption_name', type=str,
                         default='debug.json')
     parser.add_argument('--metric_name', type=str,
