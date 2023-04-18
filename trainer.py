@@ -351,7 +351,7 @@ class DebuggerBase:
         return str(time.strftime('%Y%m%d'))
 
     def _get_now(self):
-        return str(time.strftime('%Y%m%d-%H%M'))  # 格林威治时间, time.gmtime()
+        return str(time.strftime('%m%d-%H%M'))  # 日期时刻%Y%m%d-%H%M  # 格林威治时间, time.gmtime()
 
     def _init_scheduler(self):
         scheduler = ReduceLROnPlateau(self.optimizer, 'min', patience=self.args.patience, factor=0.5)
@@ -388,13 +388,13 @@ class DebuggerBase:
             torch.save({"model": value},
                        os.path.join(self.model_dir, "{}".format(_filename)))
 
-        if val_loss < self.min_val_loss:
-            file_name = "val_best_loss.pth.tar"
-            # save_whole_model(file_name) #取消了保存val_best_loss model
-            self.min_val_loss = val_loss
+        # if val_loss < self.min_val_loss:
+        #     file_name = "val_best_loss.pth.tar"
+        #     # save_whole_model(file_name) #取消了保存val_best_loss model
+        #     self.min_val_loss = val_loss
 
         if train_loss < self.min_train_loss:
-            file_name = "train_best_loss.pth.tar"
+            file_name = "train_best_loss" + str(epoch_id) + ".pth.tar"
             save_whole_model(file_name)
             self.min_train_loss = train_loss
 
@@ -480,7 +480,7 @@ class LSTMDebugger(DebuggerBase):
             stop_loss += self.args.lambda_stop * batch_stop_loss.data
             word_loss += self.args.lambda_word * batch_word_loss.data
             loss += batch_loss.data
-            if i % 50 == 0:
+            if i % 100 == 0:
                 print("\tbatch {} \ttag_loss:{:.4f}\tstop_loss:{:.4f}\tword_loss:{:.4f}\tloss:{:.4f}\n".format(i,
                                                                                                                tag_loss,
                                                                                                                stop_loss,
@@ -611,6 +611,9 @@ class LSTMDebugger(DebuggerBase):
             model = model.cuda()
         return model
 
+    # def val_metric(self):
+
+
 
 if __name__ == '__main__':
     import warnings
@@ -646,7 +649,7 @@ if __name__ == '__main__':
                         help='path for saving trained models')
     # !!!!!!!!!!!!!!!!!!!!!!!
     parser.add_argument('--load_model_path', type=str,
-                        default='./result_models/20230416-2005traindensenet201/train_best_loss.pth.tar',  # 选择导入已有的model
+                        default='.',  # 选择导入已有的model
                         help='The path of loaded model')
     # parser.add_argument('--saved_model_name', type=str, default='v4',
     #                     help='The name of saved model')
@@ -657,7 +660,7 @@ if __name__ == '__main__':
     parser.add_argument('--momentum', type=int, default=0.1)
     # VisualFeatureExtractor
     # resnet152, clip, densenet模型种类
-    parser.add_argument('--visual_model_name', type=str, default='densenet201',
+    parser.add_argument('--visual_model_name', type=str, default='resnet152',
                         help='CNN model name')
     parser.add_argument('--pretrained', action='store_true', default=True,
                         help='not using pretrained model when training')
@@ -698,7 +701,7 @@ if __name__ == '__main__':
     """
     Training Argument
     """
-    parser.add_argument('--batch_size', type=int, default=16)  # 修改了batch_size, 原本为16
+    parser.add_argument('--batch_size', type=int, default=8)  # 修改了batch_size, 原本为16
     parser.add_argument('--learning_rate', type=int, default=0.0001) #由于在几百个epoch的基础上继续训练，采用的0.0001，原本为0.001
     parser.add_argument('--epochs', type=int, default=800)  # 修改epoch
 

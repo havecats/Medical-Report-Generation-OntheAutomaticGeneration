@@ -1,3 +1,4 @@
+epoch = 100
 Namespace(result_path='./result_logs/20230412-2254trainresnet152/results', caption_name='debug.json', metric_name='metric.txt')
 ('Bleu_1', 0.24269211193941267)
 ('Bleu_2', 0.21577075348044378)
