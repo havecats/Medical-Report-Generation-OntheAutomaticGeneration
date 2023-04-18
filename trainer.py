@@ -147,7 +147,7 @@ class DebuggerBase:
         if not os.path.exists(model_dir):
             os.makedirs(model_dir)
 
-        dir_name = self._get_now() + 'train' + self.args.visual_model_name
+        dir_name = self._get_now() + self.args.visual_model_name
         model_dir = os.path.join(model_dir, dir_name)
 
         log_dir = model_dir.replace('models', 'logs')
@@ -174,9 +174,11 @@ class DebuggerBase:
             self.start_epoch = model_state['epoch']
             self.writer.write("[Load Model-{} Succeed!]\n".format(self.args.load_model_path))
             self.writer.write("Load From Epoch {}\n".format(model_state['epoch']))
+            print("[Load Model-{} Succeed!]\n".format(self.args.load_model_path), "Load From Epoch {}\n".format(model_state['epoch']))
             return model_state
         except Exception as err:
             self.writer.write("[Load Model Failed] {}\n".format(err))
+            print("[Load Model Failed] {}\n".format(err))
             return None
 
     def _init_visual_extractor(self):
@@ -193,8 +195,10 @@ class DebuggerBase:
             # model_state = torch.load(self.args.load_visual_model_path)
             model.load_state_dict(self.model_state_dict['extractor'])
             self.writer.write("[Load Visual Extractor Succeed!]\n")
+            print("[Load Visual Extractor Succeed!]\n")
         except Exception as err:
-            self.writer.write("[Load Model Failed] {}\n".format(err))
+            self.writer.write("[Load Visual Extractor Failed] {}\n".format(err))
+            print("[Load Visual Extractor Failed] {}\n".format(err))
 
 
         if not self.args.visual_trained:
@@ -224,8 +228,10 @@ class DebuggerBase:
             # model_state = torch.load(self.args.load_mlc_model_path)
             model.load_state_dict(self.model_state_dict['mlc'])
             self.writer.write("[Load MLC Succeed!]\n")
+            print("[Load MLC Succeed!]\n")
         except Exception as err:
             self.writer.write("[Load MLC Failed {}!]\n".format(err))
+            print("[Load MLC Failed {}!]\n".format(err))
 
         if not self.args.mlc_trained:
             for i, param in enumerate(model.parameters()):
@@ -255,8 +261,10 @@ class DebuggerBase:
             # model_state = torch.load(self.args.load_co_model_path)
             model.load_state_dict(self.model_state_dict['co_attention'])
             self.writer.write("[Load Co-attention Succeed!]\n")
+            print("[Load Co-attention Succeed!]\n")
         except Exception as err:
             self.writer.write("[Load Co-attention Failed {}!]\n".format(err))
+            print("[Load Co-attention Failed {}!]\n".format(err))
 
         if not self.args.co_trained:
             for i, param in enumerate(model.parameters()):
@@ -584,8 +592,11 @@ class LSTMDebugger(DebuggerBase):
             # model_state = torch.load(self.args.load_word_model_path)
             model.load_state_dict(self.model_state_dict['word_model'])
             self.writer.write("[Load Word Model Succeed!\n")
+            print("[Load Word Model Succeed!\n")
+
         except Exception as err:
             self.writer.write("[Load Word model Failed {}!]\n".format(err))
+            print("[Load Word model Failed {}!]\n".format(err))
 
         if not self.args.word_trained:
             for i, param in enumerate(model.parameters()):
@@ -635,7 +646,7 @@ if __name__ == '__main__':
                         help='path for saving trained models')
     # !!!!!!!!!!!!!!!!!!!!!!!
     parser.add_argument('--load_model_path', type=str,
-                        default='./result_models/20230415-0050trainresnet152/train_best_loss.pth.tar',  # 选择导入已有的model
+                        default='./result_models/20230416-2005traindensenet201/train_best_loss.pth.tar',  # 选择导入已有的model
                         help='The path of loaded model')
     # parser.add_argument('--saved_model_name', type=str, default='v4',
     #                     help='The name of saved model')
@@ -646,7 +657,7 @@ if __name__ == '__main__':
     parser.add_argument('--momentum', type=int, default=0.1)
     # VisualFeatureExtractor
     # resnet152, clip, densenet模型种类
-    parser.add_argument('--visual_model_name', type=str, default='resnet152',
+    parser.add_argument('--visual_model_name', type=str, default='densenet201',
                         help='CNN model name')
     parser.add_argument('--pretrained', action='store_true', default=True,
                         help='not using pretrained model when training')
@@ -689,7 +700,7 @@ if __name__ == '__main__':
     """
     parser.add_argument('--batch_size', type=int, default=16)  # 修改了batch_size, 原本为16
     parser.add_argument('--learning_rate', type=int, default=0.0001) #由于在几百个epoch的基础上继续训练，采用的0.0001，原本为0.001
-    parser.add_argument('--epochs', type=int, default=1000)  # 修改epoch
+    parser.add_argument('--epochs', type=int, default=800)  # 修改epoch
 
     parser.add_argument('--clip', type=float, default=-1,
                         help='gradient clip, -1 means no clip (default: 0.35)')

@@ -15,6 +15,12 @@ from utils.dataset import *
 from utils.loss import *
 from utils.build_tag import *
 
+class CustomUnpickler(pickle.Unpickler):
+    def find_class(self, module, name):
+        if name == 'Vocabulary':
+            from utils.build_vocab import Vocabulary
+            return Vocabulary
+        return super().find_class(module, name)
 
 class CaptionSampler(object):
     def __init__(self, args):
@@ -275,8 +281,11 @@ class CaptionSampler(object):
         return ' '.join(sampled_caption)
 
     def __init_vocab(self):
-        with open(self.args.vocab_path, 'rb') as f:
-            vocab = pickle.load(f)
+        # with open(self.args.vocab_path, 'rb') as f:
+        #     vocab = pickle.load(f)
+
+        vocab = CustomUnpickler(open(self.args.vocab_path, 'rb')).load()
+
         return vocab
 
     def __init_data_loader(self, file_list):
@@ -407,7 +416,7 @@ if __name__ == '__main__':
     #                     help='The path of loaded model')
 
     #train中的resnet模型
-    parser.add_argument('--model_dir', type=str, default='./result_models/20230415-2238trainresnet152')
+    parser.add_argument('--model_dir', type=str, default='./result_models/20230417-2308trainresnet152')
     parser.add_argument('--caption_json', type=str, default='./data/new_data/captions.json',
                         help='path for captions')
     parser.add_argument('--vocab_path', type=str, default='./data/new_data/vocab.pkl',
