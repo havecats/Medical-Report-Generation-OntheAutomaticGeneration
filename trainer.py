@@ -62,10 +62,13 @@ class DebuggerBase:
         self.optimizer = self._init_optimizer()
         self.scheduler = self._init_scheduler()
         self.logger = self._init_logger()
+
         self.writer.write("{}\n".format(self.args))
+        self.writer.close()
 
     def train(self):
         for epoch_id in range(self.start_epoch, self.args.epochs):
+            self.writer = self._init_writer()
             train_tag_loss, train_stop_loss, train_word_loss, train_loss = self._epoch_train()
             val_tag_loss, val_stop_loss, val_word_loss, val_loss = self._epoch_val()
 
@@ -114,7 +117,8 @@ class DebuggerBase:
                       lr=self.optimizer.param_groups[0]['lr'],
                       epoch=epoch_id)
             torch.cuda.empty_cache()
-        self.writer.close()  # 新加的
+            self.writer.close()  # 新加的
+        # self.writer.close()  # 新加的
 
     def _epoch_train(self):
         raise NotImplementedError
