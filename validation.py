@@ -407,7 +407,7 @@ if __name__ == '__main__':
     # Path Argument
     parser.add_argument('--image_dir', type=str, default='./data/images',
                         help='the path for images')
-    parser.add_argument('--model_dir', type=str, default='./result_models/0418-2238resnet152')
+    parser.add_argument('--model_dir', type=str, default='./result_models/0418-2309densenet201')
     parser.add_argument('--caption_json', type=str, default='./data/new_data/captions.json',
                         help='path for captions')
     parser.add_argument('--vocab_path', type=str, default='./data/new_data/vocab.pkl',
@@ -431,7 +431,7 @@ if __name__ == '__main__':
     # Saved result
     # parser.add_argument('--result_log_path', type=str, default='result_logs/20230406-0655trainresnet152',
     #                     help='the path for storing results')
-    parser.add_argument('--result_path', type=str, default='results',
+    parser.add_argument('--result_path', type=str, default='resultsv1',
                         help='the path for storing results')
     parser.add_argument('--result_name', type=str, default='debug',
                         help='the name of results')
@@ -441,10 +441,10 @@ if __name__ == '__main__':
     """
     parser.add_argument('--momentum', type=int, default=0.1)
     # VisualFeatureExtractor
-    # parser.add_argument('--visual_model_name', type=str, default='densenet201',
-    #                     help='CNN model name')
-    parser.add_argument('--visual_model_name', type=str, default='resnet152',
+    parser.add_argument('--visual_model_name', type=str, default='densenet201',
                         help='CNN model name')
+    # parser.add_argument('--visual_model_name', type=str, default='resnet152',
+    #                     help='CNN model name')
     parser.add_argument('--pretrained', action='store_true', default=False,
                         help='not using pretrained model when training')
 
@@ -472,7 +472,7 @@ if __name__ == '__main__':
     parser.add_argument('--s_max', type=int, default=6)
     parser.add_argument('--n_max', type=int, default=30)
 
-    parser.add_argument('--batch_size', type=int, default=6)#原为8，改为6
+    parser.add_argument('--batch_size', type=int, default=8)#原为8，改为6
 
     # Loss function
     parser.add_argument('--lambda_tag', type=float, default=10000)
@@ -487,7 +487,7 @@ if __name__ == '__main__':
     model_list = os.listdir(args.model_dir) #['train_best_loss50.pth.tar', 'train_best_loss600.pth.tar']
     for i ,model_name  in enumerate(model_list):
         args.load_model_path = model_name
-        args.result_name = args.result_name+model_name[15:-8]
+        args.result_name = model_name[15:-8]
         sampler = CaptionSampler(args)
         sampler.generate()
 

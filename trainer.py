@@ -343,7 +343,7 @@ class DebuggerBase:
         return logger
 
     def _init_writer(self):
-        writer = open(os.path.join(self.log_dir, 'logs.txt'), 'w')
+        writer = open(os.path.join(self.log_dir, 'logs.txt'), 'a') #a模式为追加，w模式写入时会先将文件原内容清空。
         return writer
 
     def _to_var(self, x, requires_grad=True):
@@ -664,7 +664,7 @@ if __name__ == '__main__':
     parser.add_argument('--momentum', type=int, default=0.1)
     # VisualFeatureExtractor
     # resnet152, clip, densenet模型种类
-    parser.add_argument('--visual_model_name', type=str, default='resnet152',
+    parser.add_argument('--visual_model_name', type=str, default='densenet201',
                         help='CNN model name')
     parser.add_argument('--pretrained', action='store_true', default=True,
                         help='not using pretrained model when training')
@@ -705,8 +705,8 @@ if __name__ == '__main__':
     """
     Training Argument
     """
-    parser.add_argument('--batch_size', type=int, default=8)  # 修改了batch_size, 原本为16
-    parser.add_argument('--learning_rate', type=int, default=0.0001) #由于在几百个epoch的基础上继续训练，采用的0.0001，原本为0.001
+    parser.add_argument('--batch_size', type=int, default=16)  # 修改了batch_size, 原本为16
+    parser.add_argument('--learning_rate', type=int, default=0.001) #由于在几百个epoch的基础上继续训练，采用的0.0001，原本为0.001
     parser.add_argument('--epochs', type=int, default=800)  # 修改epoch
 
     parser.add_argument('--clip', type=float, default=-1,
