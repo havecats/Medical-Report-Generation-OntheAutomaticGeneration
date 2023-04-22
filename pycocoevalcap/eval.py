@@ -43,7 +43,7 @@ class COCOEvalCap:
 
         for scorer, method in scorers:
             score, scores = scorer.compute_score(gts, res)
-            print(method, ":", score, scores)
+            # print(method, ":", score, scores)
             if type(method) == list:
                 for sc, scs, m in zip(score, scores, method):
                     self.setEval(sc, m)

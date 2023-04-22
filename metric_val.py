@@ -22,14 +22,15 @@ def load_json(json_file):
         data = json.load(f)
     return data
 
+
 def _init_logger(args):
-    logger = Logger(os.path.join(args.log_dir, 'logs_metric'))
+    logger = Logger(os.path.join(args.log_dir, 'tb_metric'))
     return logger
 
-def _init_writer(args):
-    writer = open(os.path.join(args.result_path, args.metric_name), 'w')
-    return writer
 
+def _init_writer(args):
+    writer = open(os.path.join(args.log_dir, args.metric_name), 'w')
+    return writer
 
 
 if __name__ == '__main__':
@@ -53,47 +54,63 @@ if __name__ == '__main__':
 
     logger = _init_logger(args)
 
-    result_dir = args.log_dir + args.result_dir
-    result_list = os.listdir(result_dir)  # []
-    for i, result_name in enumerate(result_list):
-        args.result_name = result_name
-
-
-
-    test = load_json(os.path.join(args.result_path, args.caption_name))
-    datasetGTS = {'annotations': []}
-    datasetRES = {'annotations': []}
-
-    for i, image_id in enumerate(test):
-        array = []
-        for each in test[image_id]['Pred Sent']:
-            array.append(test[image_id]['Pred Sent'][each])
-        pred_sent = '. '.join(array)
-
-        array = []
-        for each in test[image_id]['Real Sent']:
-            sent = test[image_id]['Real Sent'][each]
-            if len(sent) != 0:
-                array.append(sent)
-        real_sent = '. '.join(array)
-        datasetGTS['annotations'].append({
-            'image_id': i,
-            'caption': real_sent
-        })
-        datasetRES['annotations'].append({
-            'image_id': i,
-            'caption': pred_sent
-        })
-
-    # 生成记录指标的文件metric.txt
     writer = _init_writer(args)
     writer.write("{}\n".format(args))
 
-    rng = range(len(test))
-    metric = calculate_metrics(rng, datasetGTS, datasetRES)
+    result_path = args.log_dir + args.result_dir  # './result_logs/0418-2309densenet201/results'
+    result_list = os.listdir(result_path)  # [].
+    result_list.sort(key=lambda x:int(x[:-5]))
+    for i, result_name in enumerate(result_list):
+        args.result_name = os.path.join(result_path, result_name)
+        test = load_json(args.result_name)
 
-    # print(metric)
-    for i in metric.items():
-        writer.write(''.join(str(i))+'\n')
-        # print(''.join(str(i)))
+        datasetGTS = {'annotations': []}
+        datasetRES = {'annotations': []}
+
+        for i, image_id in enumerate(test):
+            array = []
+            for each in test[image_id]['Pred Sent']:
+                array.append(test[image_id]['Pred Sent'][each])
+            pred_sent = '. '.join(array)
+
+            array = []
+            for each in test[image_id]['Real Sent']:
+                sent = test[image_id]['Real Sent'][each]
+                if len(sent) != 0:
+                    array.append(sent)
+            real_sent = '. '.join(array)
+            datasetGTS['annotations'].append({
+                'image_id': i,
+                'caption': real_sent
+            })
+            datasetRES['annotations'].append({
+                'image_id': i,
+                'caption': pred_sent
+            })
+
+        rng = range(len(test))
+        metric = calculate_metrics(rng, datasetGTS, datasetRES)
+
+        for tag, value in metric.items():
+            logger.scalar_summary(tag, value, int(result_name[:-5]))
+        writer.write("[ Epoch {}]\tBleu1:{:.4f} Bleu2:{:.4f} Bleu3:{:.4f} Bleu4:{:.4f}\t\t"
+                     "METEOR:{:.4f}\tROUGE_L:{:.4f}\tCIDEr:{:.4f}\n".format(result_name[:-5],
+                                                                            metric['Bleu_1'],
+                                                                            metric['Bleu_2'],
+                                                                            metric['Bleu_3'],
+                                                                            metric['Bleu_4'],
+                                                                            metric['METEOR'],
+                                                                            metric['ROUGE_L'],
+                                                                            metric['CIDEr'],
+                                                                            ))
+        print("[ Epoch {}]\tBleu1:{:.4f} Bleu2:{:.4f} Bleu3:{:.4f} Bleu4:{:.4f}\t\t"
+                     "METEOR:{:.4f}\tROUGE_L:{:.4f}\tCIDEr:{:.4f}\n".format(result_name[:-5],
+                                                                            metric['Bleu_1'],
+                                                                            metric['Bleu_2'],
+                                                                            metric['Bleu_3'],
+                                                                            metric['Bleu_4'],
+                                                                            metric['METEOR'],
+                                                                            metric['ROUGE_L'],
+                                                                            metric['CIDEr'],
+                                                                            ))
     writer.close()
