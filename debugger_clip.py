@@ -654,7 +654,7 @@ if __name__ == '__main__':
     """
     parser.add_argument('--momentum', type=int, default=0.1)
     # VisualFeatureExtractor
-    parser.add_argument('--visual_model_name', type=str, default='densenet201',
+    parser.add_argument('--visual_model_name', type=str, default='clip',
                         help='CNN model name')
     parser.add_argument('--pretrained', action='store_true', default=True,
                         help='not using pretrained model when training')
