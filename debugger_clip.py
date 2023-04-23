@@ -337,7 +337,7 @@ class DebuggerBase:
         return logger
 
     def _init_writer(self):
-        writer = open(os.path.join(self.log_dir, 'logs.txt'), 'w')
+        writer = open(os.path.join(self.log_dir, 'logs.txt'), 'a')
         return writer
 
     def _to_var(self, x, requires_grad=True):
@@ -392,7 +392,8 @@ class DebuggerBase:
         #     self.min_val_loss = val_loss
 
         if train_loss < self.min_train_loss:
-            file_name = "train_best_loss" + str(epoch_id) + ".pth.tar"
+            # file_name = "train_best_loss" + str(epoch_id) + ".pth.tar"
+            file_name = "train_best_loss" + ".pth.tar"
             save_whole_model(file_name)
             self.min_train_loss = train_loss
 
@@ -460,8 +461,8 @@ class LSTMDebugger(DebuggerBase):
                     batch_word_loss += (self.ce_criterion(words, context[:, sentence_index, word_index])
                                         * word_mask).sum() * (0.9 ** word_index)
                     # batch_word_loss += (self.ce_criterion(words, context[:, sentence_index, word_index])).sum()
-                    print("words:{}".format(torch.max(words, 1)[1]))
-                    print("real:{}".format(context[:, sentence_index, word_index]))
+                    # print("words:{}".format(torch.max(words, 1)[1])) # 自行注释
+                    # print("real:{}".format(context[:, sentence_index, word_index])) # 自行注释
 
             batch_loss = self.args.lambda_tag * batch_tag_loss \
                          + self.args.lambda_stop * batch_stop_loss \
@@ -478,7 +479,7 @@ class LSTMDebugger(DebuggerBase):
             stop_loss += self.args.lambda_stop * batch_stop_loss.data
             word_loss += self.args.lambda_word * batch_word_loss.data
             loss += batch_loss.data
-            if i % 100 == 0:
+            if True:
                 print("\tbatch {} \ttag_loss:{:.4f}\tstop_loss:{:.4f}\tword_loss:{:.4f}\tloss:{:.4f}\n".format(i,
                                                                                                                tag_loss,
                                                                                                                stop_loss,
