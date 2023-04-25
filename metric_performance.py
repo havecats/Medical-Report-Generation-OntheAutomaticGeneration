@@ -34,11 +34,11 @@ if __name__ == '__main__':
     # parser.add_argument('--result_path', type=str,
     #                     default='./results/clean_test.json')
     parser.add_argument('--result_path', type=str,
-                        default='./result_logs/20230415-2238trainresnet152/results')
+                        default='./result_logs/0418-2254resnet152/results')
     parser.add_argument('--caption_name', type=str,
-                        default='debug.json')
+                        default='test.json')
     parser.add_argument('--metric_name', type=str,
-                        default='metric.txt')
+                        default='test_metric.txt')
     args = parser.parse_args()
     print(args)
 
