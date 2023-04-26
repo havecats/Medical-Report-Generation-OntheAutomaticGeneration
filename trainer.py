@@ -89,13 +89,13 @@ class DebuggerBase:
             #                                                                               val_loss,
             #                                                                               self.optimizer.param_groups[
             #                                                                                   0]['lr']))
-            print("[{} - Epoch {}]\ttrain loss:{:.4f}\tlr:{:.4f}\n".format(self._get_now(),
+            print("[{} - Epoch {}]\ttrain loss:{:.4f}\tlr:{:.6f}\n".format(self._get_now(),
                                                                                             epoch_id,
                                                                                             train_loss,
                                                                                             self.optimizer.param_groups[
                                                                                                 0]['lr']))
             self.writer.write(
-                "[{} - Epoch {}]\ttrain loss:{:.4f}\tlr:{:.4f}\n".format(self._get_now(),
+                "[{} - Epoch {}]\ttrain loss:{:.4f}\tlr:{:.6f}\n".format(self._get_now(),
                                                                                           epoch_id,
                                                                                           train_loss,
                                                                                           self.optimizer.param_groups[
@@ -664,14 +664,14 @@ if __name__ == '__main__':
     parser.add_argument('--momentum', type=int, default=0.1)
     # VisualFeatureExtractor
     # resnet152, clip, densenet模型种类
-    parser.add_argument('--visual_model_name', type=str, default='densenet201',
+    parser.add_argument('--visual_model_name', type=str, default='clip',
                         help='CNN model name')
     parser.add_argument('--pretrained', action='store_true', default=True,
                         help='not using pretrained model when training')
     parser.add_argument('--load_visual_model_path', type=str,
                         default='.')
-    parser.add_argument('--visual_trained', action='store_true', default=True,
-                        help='Whether train visual extractor or not')
+    parser.add_argument('--visual_trained', action='store_true', default=False,
+                        help='Whether train visual extractor or not') #是否训练图片特征提取器
 
     # MLC
     parser.add_argument('--classes', type=int, default=210)
@@ -682,7 +682,7 @@ if __name__ == '__main__':
     parser.add_argument('--mlc_trained', action='store_true', default=True)
 
     # Co-Attention
-    parser.add_argument('--attention_version', type=str, default='v4')
+    parser.add_argument('--attention_version', type=str, default='v1')
     parser.add_argument('--embed_size', type=int, default=512)
     parser.add_argument('--hidden_size', type=int, default=512)
     parser.add_argument('--load_co_model_path', type=str, default='.')
@@ -705,8 +705,8 @@ if __name__ == '__main__':
     """
     Training Argument
     """
-    parser.add_argument('--batch_size', type=int, default=16)  # 修改了batch_size, 原本为16
-    parser.add_argument('--learning_rate', type=int, default=0.001) #由于在几百个epoch的基础上继续训练，采用的0.0001，原本为0.001
+    parser.add_argument('--batch_size', type=int, default=32)  # 修改了batch_size, 原本为16
+    parser.add_argument('--learning_rate', type=int, default=0.002) #由于在几百个epoch的基础上继续训练，采用的0.0001，原本为0.001
     parser.add_argument('--epochs', type=int, default=800)  # 修改epoch
 
     parser.add_argument('--clip', type=float, default=-1,

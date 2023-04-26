@@ -53,9 +53,9 @@ class VisualFeatureExtractor(nn.Module):
         #clip模型提取特征，后续修改
         if self.model_name == 'clip':
 
-            # 先设置为每次都获取新的clip模型，否则直接self.model.encode_image()会取得nan
-            import clip
-            self.model, preprocess = clip.load("ViT-B/32", device=device, jit=False)
+            # # 先设置为每次都获取新的clip模型，否则直接self.model.encode_image()会取得nan
+            # import clip
+            # self.model, preprocess = clip.load("ViT-B/32", device=device, jit=False)
 
             visual_features = self.model.encode_image(images).float().squeeze()
             avg_features = visual_features
