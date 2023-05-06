@@ -664,13 +664,13 @@ if __name__ == '__main__':
     parser.add_argument('--momentum', type=int, default=0.1)
     # VisualFeatureExtractor
     # resnet152, clip, densenet模型种类
-    parser.add_argument('--visual_model_name', type=str, default='clip',
+    parser.add_argument('--visual_model_name', type=str, default='resnet152',
                         help='CNN model name')
     parser.add_argument('--pretrained', action='store_true', default=True,
                         help='not using pretrained model when training')
     parser.add_argument('--load_visual_model_path', type=str,
                         default='.')
-    parser.add_argument('--visual_trained', action='store_true', default=False,
+    parser.add_argument('--visual_trained', action='store_true', default=True,
                         help='Whether train visual extractor or not') #是否训练图片特征提取器
 
     # MLC
@@ -689,7 +689,7 @@ if __name__ == '__main__':
     parser.add_argument('--co_trained', action='store_true', default=True)
 
     # Sentence Model
-    parser.add_argument('--sent_version', type=str, default='v1')
+    parser.add_argument('--sent_version', type=str, default='v2')
     parser.add_argument('--sentence_num_layers', type=int, default=2)
     parser.add_argument('--dropout', type=float, default=0)
     parser.add_argument('--load_sentence_model_path', type=str,
@@ -705,8 +705,8 @@ if __name__ == '__main__':
     """
     Training Argument
     """
-    parser.add_argument('--batch_size', type=int, default=32)  # 修改了batch_size, 原本为16
-    parser.add_argument('--learning_rate', type=int, default=0.002) #由于在几百个epoch的基础上继续训练，采用的0.0001，原本为0.001
+    parser.add_argument('--batch_size', type=int, default=16)  # 修改了batch_size, 原本为16
+    parser.add_argument('--learning_rate', type=int, default=0.001) #由于在几百个epoch的基础上继续训练，采用的0.0001，原本为0.001
     parser.add_argument('--epochs', type=int, default=800)  # 修改epoch
 
     parser.add_argument('--clip', type=float, default=-1,

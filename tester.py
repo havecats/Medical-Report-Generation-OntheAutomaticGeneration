@@ -416,14 +416,14 @@ if __name__ == '__main__':
     #                     help='The path of loaded model')
 
     #train中的resnet模型
-    parser.add_argument('--model_dir', type=str, default='./result_models/0418-2254resnet152')
+    parser.add_argument('--model_dir', type=str, default='./result_models/0429-2002clip')
     parser.add_argument('--caption_json', type=str, default='./data/new_data/captions.json',
                         help='path for captions')
     parser.add_argument('--vocab_path', type=str, default='./data/new_data/vocab.pkl',
                         help='the path for vocabulary object')
     parser.add_argument('--file_lits', type=str, default='./data/new_data/test_data.txt',
                         help='the path for test file list')
-    parser.add_argument('--load_model_path', type=str, default='train_best_loss441.pth.tar',
+    parser.add_argument('--load_model_path', type=str, default='train_best_loss254.pth.tar',
                         help='The path of loaded model')
 
     # transforms argument
@@ -439,7 +439,7 @@ if __name__ == '__main__':
     #                     help='the path for storing results')
     parser.add_argument('--result_path', type=str, default='results',
                         help='the path for storing results')
-    parser.add_argument('--result_name', type=str, default='debug',
+    parser.add_argument('--result_name', type=str, default='test',
                         help='the name of results')
 
     """
@@ -449,7 +449,7 @@ if __name__ == '__main__':
     # VisualFeatureExtractor
     # parser.add_argument('--visual_model_name', type=str, default='densenet201',
     #                     help='CNN model name')
-    parser.add_argument('--visual_model_name', type=str, default='resnet152',
+    parser.add_argument('--visual_model_name', type=str, default='clip',
                         help='CNN model name')
     parser.add_argument('--pretrained', action='store_true', default=False,
                         help='not using pretrained model when training')
@@ -460,12 +460,12 @@ if __name__ == '__main__':
     parser.add_argument('--k', type=int, default=10)
 
     # Co-Attention
-    parser.add_argument('--attention_version', type=str, default='v4')
+    parser.add_argument('--attention_version', type=str, default='v1')
     parser.add_argument('--embed_size', type=int, default=512)
     parser.add_argument('--hidden_size', type=int, default=512)
 
     # Sentence Model
-    parser.add_argument('--sent_version', type=str, default='v1')
+    parser.add_argument('--sent_version', type=str, default='v2')
     parser.add_argument('--sentence_num_layers', type=int, default=2)
     parser.add_argument('--dropout', type=float, default=0.1)
 
