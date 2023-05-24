@@ -665,7 +665,7 @@ if __name__ == '__main__':
     # VisualFeatureExtractor
     # resnet152, clip, densenet模型种类
     parser.add_argument('--visual_model_name', type=str, default='resnet152',
-                        help='CNN model name')
+                        help='visual model name')
     parser.add_argument('--pretrained', action='store_true', default=True,
                         help='not using pretrained model when training')
     parser.add_argument('--load_visual_model_path', type=str,
@@ -682,7 +682,7 @@ if __name__ == '__main__':
     parser.add_argument('--mlc_trained', action='store_true', default=True)
 
     # Co-Attention
-    parser.add_argument('--attention_version', type=str, default='v1')
+    parser.add_argument('--attention_version', type=str, default='v2')
     parser.add_argument('--embed_size', type=int, default=512)
     parser.add_argument('--hidden_size', type=int, default=512)
     parser.add_argument('--load_co_model_path', type=str, default='.')
